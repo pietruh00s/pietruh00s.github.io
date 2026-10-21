@@ -3,7 +3,7 @@ import json, subprocess, sys, urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SITE = ROOT / "docs"
+SITE = ROOT
 CACHE = ROOT / "tools" / "_cache"
 CDN = "https://cdn.prod.website-files.com/64ee4c358275d03e323c73e8/"
 CDN_SITE = "https://cdn.prod.website-files.com/64e731a821086db3a060f0b5/"
