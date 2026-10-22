@@ -125,6 +125,28 @@ const dialog = $(".case");
 const body = $(".case__body");
 let current = null, returnFocus = null;
 
+// breakdown kinds: "compare" (before/after slider), "video" (silent loop), "image"
+function breakdownHTML(b) {
+  let media = "";
+  if (b.type === "compare") media = `
+    <div class="compare" style="--pos:50%${b.ratio ? `;--ratio:${b.ratio}` : ""}">
+      <img src="${b.before}" alt="${esc(b.beforeLabel || "Before")}">
+      <img class="compare__after" src="${b.after}" alt="${esc(b.afterLabel || "After")}">
+      <span class="compare__label mono">${esc(b.beforeLabel || "Before")}</span>
+      <span class="compare__label compare__label--after mono">${esc(b.afterLabel || "After")}</span>
+      <span class="compare__handle" aria-hidden="true"></span>
+      <input type="range" min="0" max="100" value="50" aria-label="Before / after comparison">
+    </div>`;
+  else if (b.type === "video") media = `
+    <video src="${b.src}" ${b.poster ? `poster="${b.poster}"` : ""} muted loop playsinline preload="metadata" ${reduceMotion ? "controls" : "autoplay"}></video>`;
+  else media = `<img src="${b.src}" alt="${esc(b.title || "")}">`;
+  return `
+    <figure class="breakdown">
+      <div class="breakdown__media">${media}</div>
+      ${b.title || b.text ? `<figcaption>${b.title ? `<b>${esc(b.title)}</b>` : ""}${b.text ? `<p>${esc(b.text)}</p>` : ""}</figcaption>` : ""}
+    </figure>`;
+}
+
 function caseHTML(p) {
   const list = p.bullets?.length ? `
     <h2>${p.slug === "house-fighters" ? "My role" : "What I did"}</h2>
@@ -137,6 +159,9 @@ function caseHTML(p) {
       ${(p.about.paras || []).map(t => `<p>${esc(t)}</p>`).join("")}
       ${p.about.features ? `<div class="case__feats">${p.about.features.map(([t, d]) => `<div><b>${esc(t)}</b><p>${esc(d)}</p></div>`).join("")}</div>` : ""}
     </section>` : "";
+  const breakdowns = p.breakdowns?.length ? `
+    <h2>Breakdowns</h2>
+    <div class="breakdowns">${p.breakdowns.map(breakdownHTML).join("")}</div>` : "";
   const videos = p.yt?.length ? `
     <h2>Videos</h2>
     <div class="videos">${p.yt.map(id => `
@@ -171,6 +196,7 @@ function caseHTML(p) {
           ${p.website ? `<div><a class="btn btn--ghost" href="${p.website}" target="_blank" rel="noopener">Website ↗</a></div>` : ""}
         </dl>
       </div>
+      ${breakdowns}
       ${videos}
       ${gallery}
       ${about}
@@ -218,6 +244,9 @@ function route() {
 
 dialog.addEventListener("cancel", e => { e.preventDefault(); if (lightbox.hidden) closeCase(); });
 $(".case__close").addEventListener("click", () => closeCase());
+body.addEventListener("input", e => {
+  if (e.target.matches(".compare input")) e.target.parentElement.style.setProperty("--pos", `${e.target.value}%`);
+});
 body.addEventListener("click", e => {
   const yt = e.target.closest("[data-yt]");
   if (yt) {
@@ -288,6 +317,19 @@ function initNavSpy() {
   document.querySelectorAll("main section[id]").forEach(s => io.observe(s));
 }
 
+function initMobileMenu() {
+  const nav = $(".nav"), toggle = $(".nav__toggle");
+  const set = open => {
+    nav.classList.toggle("is-open", open);
+    toggle.setAttribute("aria-expanded", open);
+    toggle.textContent = open ? "Close" : "Menu";
+  };
+  toggle.addEventListener("click", () => set(!nav.classList.contains("is-open")));
+  $(".nav__menu").addEventListener("click", e => { if (e.target.closest("a")) set(false); });
+  addEventListener("keydown", e => { if (e.key === "Escape" && nav.classList.contains("is-open")) { set(false); toggle.focus(); } });
+  addEventListener("click", e => { if (!nav.contains(e.target)) set(false); });
+}
+
 document.querySelectorAll("[data-copy]").forEach(btn => btn.addEventListener("click", async () => {
   try { await navigator.clipboard.writeText(btn.dataset.copy); btn.textContent = "Copied ✓"; }
   catch { btn.textContent = "Select & copy"; }
@@ -298,6 +340,7 @@ $(".year").textContent = new Date().getFullYear();
 renderLists();
 initReveal();
 initNavSpy();
+initMobileMenu();
 initShader();
 addEventListener("hashchange", route);
 route();

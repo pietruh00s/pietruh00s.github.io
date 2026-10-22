@@ -131,6 +131,13 @@ window.PROJECTS = [
    "steam"
   ],
   "summary": "Explore a vibrant, cartoon-inspired world, customize whimsical cars and navigate an ever-changing landscape with intuitive controls. As the delivery master, conquer challenges, earn achievements, and showcase your driving skills in this thrilling endless game. With universal appeal, it's an immersive escape for all ages.",
+  "intro": "One of the Revulo Games titles – as co-founder, I worked across the studio's whole lineup and was responsible for:",
+  "bullets": [
+   "Leading artistic direction and technical execution for titles published on Nintendo Switch, PlayStation, Xbox and Steam.",
+   "Acting as Product Owner and Game Designer – shaping project strategy, 3D/2D asset creation, environment design and VFX.",
+   "Producing technical promotional materials and video showcases built in Unity.",
+   "Runtime optimizations tailored to strict console hardware limits."
+  ],
   "about": {
    "lead": "Super Box Delivery: Beyond the Horizon houses an expansive landscape, seamlessly navigable with engaging controls that promise boundless entertainment.",
    "paras": [
@@ -288,6 +295,13 @@ window.PROJECTS = [
    "steam"
   ],
   "summary": "An action-packed, roguelike shooter set in ever-changing mazes infested with aliens. Every maze is procedurally generated with random layouts and adversaries, creating unique challenges. Its vibrant visuals and dynamic gameplay promise an exhilarating experience in the heart of unpredictable chaos.",
+  "intro": "One of the Revulo Games titles – as co-founder, I worked across the studio's whole lineup and was responsible for:",
+  "bullets": [
+   "Leading artistic direction and technical execution for titles published on Nintendo Switch, PlayStation, Xbox and Steam.",
+   "Acting as Product Owner and Game Designer – shaping project strategy, 3D/2D asset creation, environment design and VFX.",
+   "Producing technical promotional materials and video showcases built in Unity.",
+   "Runtime optimizations tailored to strict console hardware limits."
+  ],
   "about": {
    "lead": "Maze Blaze is filled with endless possibilities. Lock and load, then enter at your own peril.",
    "paras": [
@@ -335,6 +349,12 @@ window.PROJECTS = [
    "android"
   ],
   "summary": "Expansive MMORPG set in a fantasy world. Explore diverse landscapes, face powerful foes, and participate in PvP battles. Collaborate globally, customize characters, master magic and skills. Experience captivating visuals and soundscapes, rewriting the legend of an epic fantasy adventure in this ultimate RPG campaign.",
+  "bullets": [
+   "Delivered high-quality 3D assets, environment art and level design for a large multiplayer mobile RPG.",
+   "Improved performance and visuals through custom materials, HLSL shaders and Unity optimizations as a Technical Artist.",
+   "Developed real-time VFX integrated with gameplay mechanics via C# scripting.",
+   "Maintained distributed Git version control workflows."
+  ],
   "about": {
    "lead": "In this visually stunning and sonically captivating universe, players rewrite the legends of epic fantasy adventures.",
    "paras": [
@@ -385,7 +405,34 @@ window.PROJECTS = [
    "ios",
    "steam"
   ],
-  "summary": "A neon-soaked pool game from Revulo Games.",
+  "summary": "A neon-styled arcade take on billiards – smash the cue ball into brightly colored balls across 40 tables that get more chaotic as you go. Easy to learn, hard to master.",
+  "intro": "One of the Revulo Games titles – as co-founder, I worked across the studio's whole lineup and was responsible for:",
+  "bullets": [
+   "Leading artistic direction and technical execution for titles published on Nintendo Switch, PlayStation, Xbox and Steam.",
+   "Acting as Product Owner and Game Designer – shaping project strategy, 3D/2D asset creation, environment design and VFX.",
+   "Producing technical promotional materials and video showcases built in Unity.",
+   "Runtime optimizations tailored to strict console hardware limits."
+  ],
+  "about": {
+   "lead": "Classic pool, rebuilt as a glowing arcade game with six ways to play.",
+   "paras": [
+    "Released by Revulo Games on Nintendo Switch on March 10, 2022, followed by Steam and console versions later that year."
+   ],
+   "features": [
+    [
+     "6 game modes",
+     "Classic (clear the table in three strokes), Arcade (unlimited strokes), Challenge (pocket balls in order), plus Cooperation, Race and Battle."
+    ],
+    [
+     "40 tables",
+     "Unique layouts that become more chaotic the further you get."
+    ],
+    [
+     "Local multiplayer",
+     "1–4 players on one system, co-op or head-to-head."
+    ]
+   ]
+  },
   "website": "https://www.revulogames.com/games/cyber-pool.html",
   "imgs": [
    "assets/img/cyber-pool/01",

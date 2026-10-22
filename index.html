@@ -6,15 +6,22 @@
   <title>Piotr Osika – Technical Artist</title>
   <meta name="description" content="Piotr Osika – Technical, VFX, Environment, 3D & UI Artist. Shaders, effects, tools and worlds in Unity.">
   <meta name="theme-color" content="#0a0b0d">
-  <meta property="og:title" content="Piotr Osika – Technical Artist">
-  <meta property="og:description" content="If there's anything graphics-related to do in Unity – I'm in!">
-  <meta property="og:image" content="assets/img/trophy-hunter/01.webp">
+  <link rel="canonical" href="https://pietruh00s.github.io/">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pietruh00s.github.io/">
+  <meta property="og:title" content="Piotr Osika – Technical Artist">
+  <meta property="og:description" content="Technical Artist with 10+ years in real-time graphics – shaders, VFX, tools and optimization in Unity. If there's anything graphics-related to do in Unity – I'm in!">
+  <meta property="og:image" content="https://pietruh00s.github.io/assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Piotr Osika – Technical Artist. Shaders, VFX, Tools, Unity.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://pietruh00s.github.io/assets/og.jpg">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=20261022h">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261022j">
 </head>
 <body>
   <a class="skip" href="#work">Skip to work</a>
@@ -22,9 +29,13 @@
   <header class="nav">
     <a class="nav__logo" href="#top" aria-label="Piotr Osika – home">PIOTR<span>/</span>OSIKA</a>
     <nav class="nav__links" aria-label="Main">
-      <a href="#work">Work</a>
-      <a href="#other">Other</a>
-      <a href="#about">About</a>
+      <div class="nav__menu" id="nav-menu">
+        <a href="#work">Work</a>
+        <a href="#other">Other</a>
+        <a href="#about">About</a>
+        <a href="assets/Piotr-Osika-Resume.pdf" target="_blank" rel="noopener">CV</a>
+      </div>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">Menu</button>
       <a class="nav__cta" href="#contact">Let's talk</a>
     </nav>
   </header>
@@ -44,7 +55,7 @@
           <p class="hero__lead">Hello! I'm Piotr. If there's anything graphics-related to do in Unity – I'm&nbsp;in!</p>
           <div class="hero__actions">
             <a class="btn btn--primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
-            <a class="btn btn--ghost" href="#contact">Get in touch</a>
+            <a class="btn btn--ghost" href="assets/Piotr-Osika-Resume.pdf" download>Download CV <span class="mono btn__tag">PDF</span></a>
           </div>
         </div>
         <figure class="hero__portrait">
@@ -194,6 +205,7 @@
           <li><a href="https://www.instagram.com/piotrosika/" target="_blank" rel="noopener">Instagram ↗</a></li>
           <li><a href="https://www.facebook.com/piotr.osika" target="_blank" rel="noopener">Facebook ↗</a></li>
           <li><a href="https://github.com/pietruh00s" target="_blank" rel="noopener">GitHub ↗</a></li>
+          <li><a class="socials__cv" href="assets/Piotr-Osika-Resume.pdf" download>Download CV ↓</a></li>
         </ul>
       </div>
     </section>
@@ -223,7 +235,7 @@
     <p class="lightbox__count mono"></p>
   </div>
 
-  <script src="assets/js/data.js?v=20261022h"></script>
-  <script src="assets/js/main.js?v=20261022h" type="module"></script>
+  <script src="assets/js/data.js?v=20261022j"></script>
+  <script src="assets/js/main.js?v=20261022j" type="module"></script>
 </body>
 </html>

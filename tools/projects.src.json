@@ -1,8 +1,15 @@
 [
   {
-    "slug": "trophy-hunter", "group": "featured", "title": "Trophy Hunter",
-    "role": "Technical Artist", "studio": "Ten Square Games", "period": "2025",
-    "platforms": ["ios", "android"],
+    "slug": "trophy-hunter",
+    "group": "featured",
+    "title": "Trophy Hunter",
+    "role": "Technical Artist",
+    "studio": "Ten Square Games",
+    "period": "2025",
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "summary": "Trophy Hunter is a competitive mobile hunting game developed by Ten Square Games, designed for players seeking fast-paced progression, tactical gameplay, and social engagement. Set in realistic natural environments, players compete in dynamic 1v1 matches across diverse arenas, relying on precision, strategy, and quick decision-making.",
     "bullets": [
       "Prepared the visual foundations for the company’s new flagship project, including locations, shaders, effects, and custom tools for a global release.",
@@ -13,22 +20,54 @@
     ],
     "about": {
       "lead": "Ten Square Games’ third hunting title – and the first built as a pure skill game, where precision, reaction time and split-second decisions matter more than exploration or resource management.",
-      "paras": ["Trophy Hunter launched globally on iOS and Android on July 3, 2025, after a pre-registration campaign that gathered over 500,000 players on Google Play. Matches are fast, real-time 1v1 sniper duels played over three rounds, with only three shots per duel – so every trigger pull counts."],
+      "paras": [
+        "Trophy Hunter launched globally on iOS and Android on July 3, 2025, after a pre-registration campaign that gathered over 500,000 players on Google Play. Matches are fast, real-time 1v1 sniper duels played over three rounds, with only three shots per duel – so every trigger pull counts."
+      ],
       "features": [
-        ["Nine arenas", "From Yukon, Montana and Kamchatka to the savanna, Botswana, Egypt, a deep jungle, a lost city in Burma and Java – each with its own native wildlife."],
-        ["20+ weapons", "Unlocked and upgraded with cards, each tuned by damage, bullet speed, zoom and slow-motion duration."],
-        ["Special ammo", "Four ammo types with distinct effects, such as extra damage or a score boost."],
-        ["Hunter's Lodge", "An upgradeable personal base that doubles as a trophy room for your best hunts."],
-        ["Leagues & clubs", "Seasonal leagues, global leaderboards and clubs, plus a daily Golden Shot precision challenge."]
+        [
+          "Nine arenas",
+          "From Yukon, Montana and Kamchatka to the savanna, Botswana, Egypt, a deep jungle, a lost city in Burma and Java – each with its own native wildlife."
+        ],
+        [
+          "20+ weapons",
+          "Unlocked and upgraded with cards, each tuned by damage, bullet speed, zoom and slow-motion duration."
+        ],
+        [
+          "Special ammo",
+          "Four ammo types with distinct effects, such as extra damage or a score boost."
+        ],
+        [
+          "Hunter's Lodge",
+          "An upgradeable personal base that doubles as a trophy room for your best hunts."
+        ],
+        [
+          "Leagues & clubs",
+          "Seasonal leagues, global leaderboards and clubs, plus a daily Golden Shot precision challenge."
+        ]
       ]
     },
-    "imgs": ["6867b337e21da606cd1b8029_th_main.png", "6a158818906f94de4e2013d2_Image%20Sequence_009_0000%20(%C5%9Aredni).png", "6a15881d34788d681022e16d_Image%20Sequence_009_0000%20(%C5%9Aredni)%20copy2.png", "6a15882370e814eb99711fc2_Image%20Sequence_009_0000%20(%C5%9Aredni)%20copy3.png", "6a15882eceb484ceb7af5049_Image%20Sequence_009_0000%20(%C5%9Aredni)%20copy4.png", "6a15883324d92d96a1b482e7_Image%20Sequence_009_0000%20(%C5%9Aredni)%20copy5.png", "6a158ed69095c218a4b6eb2b_Image%20Sequence_009_0000%20(%C5%9Aredni)%20copy5%20copy.png"],
+    "imgs": [
+      "6867b337e21da606cd1b8029_th_main.png",
+      "6a158818906f94de4e2013d2_Image%20Sequence_009_0000%20(%C5%9Aredni).png",
+      "6a15881d34788d681022e16d_Image%20Sequence_009_0000%20(%C5%9Aredni)%20copy2.png",
+      "6a15882370e814eb99711fc2_Image%20Sequence_009_0000%20(%C5%9Aredni)%20copy3.png",
+      "6a15882eceb484ceb7af5049_Image%20Sequence_009_0000%20(%C5%9Aredni)%20copy4.png",
+      "6a15883324d92d96a1b482e7_Image%20Sequence_009_0000%20(%C5%9Aredni)%20copy5.png",
+      "6a158ed69095c218a4b6eb2b_Image%20Sequence_009_0000%20(%C5%9Aredni)%20copy5%20copy.png"
+    ],
     "yt": []
   },
   {
-    "slug": "real-boxing-3", "group": "featured", "title": "Real Boxing 3",
-    "role": "Senior Technical Artist", "studio": "Vivid Games", "period": "Oct 2023 – Jun 2024",
-    "platforms": ["ios", "android"],
+    "slug": "real-boxing-3",
+    "group": "featured",
+    "title": "Real Boxing 3",
+    "role": "Senior Technical Artist",
+    "studio": "Vivid Games",
+    "period": "Oct 2023 – Jun 2024",
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "summary": "Real Boxing 3 emerges as a standout successor to Real Boxing 2, featuring thrilling real-time PVP combat and flawless matchmaking. With over 32,500 brawls played during its soft launch, the game demonstrates exceptional technical stability, addictive gameplay, and global appeal, poised to redefine the mobile boxing genre for players everywhere.",
     "bullets": [
       "Established the graphics foundation for a newly developed project, ensuring high-quality visuals and performance.",
@@ -40,36 +79,99 @@
     ],
     "about": {
       "lead": "The successor to Real Boxing 2, rebuilt around real-time PvP – you build your own fighter and step into the ring against players from around the world.",
-      "paras": ["After a technical soft launch in April 2024, the game went through a US soft launch on Android from November 21 to 30, 2024. Players fought over 32,500 bouts, matchmaking ran without issues, 95.3% of players completed the tutorial – more than in Real Boxing 2 – and over 95% of sessions were failure-free."],
+      "paras": [
+        "After a technical soft launch in April 2024, the game went through a US soft launch on Android from November 21 to 30, 2024. Players fought over 32,500 bouts, matchmaking ran without issues, 95.3% of players completed the tutorial – more than in Real Boxing 2 – and over 95% of sessions were failure-free."
+      ],
       "features": [
-        ["Real-time PvP", "Live multiplayer bouts where timing, blocking and spacing decide the fight."],
-        ["Ranked ladder", "Climb ranked divisions to elite tiers and defend your spot on the global ladder."],
-        ["Boxer customization", "Define a fighting style, boost stats and build a signature look with unlockable gear."],
-        ["Fame Road", "The main progression path – from local gym hero to global superstar."],
-        ["Friends & missions", "Challenge friends directly and complete daily missions for rewards."]
+        [
+          "Real-time PvP",
+          "Live multiplayer bouts where timing, blocking and spacing decide the fight."
+        ],
+        [
+          "Ranked ladder",
+          "Climb ranked divisions to elite tiers and defend your spot on the global ladder."
+        ],
+        [
+          "Boxer customization",
+          "Define a fighting style, boost stats and build a signature look with unlockable gear."
+        ],
+        [
+          "Fame Road",
+          "The main progression path – from local gym hero to global superstar."
+        ],
+        [
+          "Friends & missions",
+          "Challenge friends directly and complete daily missions for rewards."
+        ]
       ]
     },
     "website": "https://play.google.com/store/apps/details?id=com.vividgames.realboxing3",
-    "imgs": ["675b6a468e4f936967178f47_unnamed.png"],
-    "yt": ["eFBMmeljezQ", "BNF71tthc8o"]
+    "imgs": [
+      "675b6a468e4f936967178f47_unnamed.png"
+    ],
+    "yt": [
+      "eFBMmeljezQ",
+      "BNF71tthc8o"
+    ]
   },
   {
-    "slug": "super-box-delivery", "group": "featured", "title": "Super Box Delivery",
-    "role": "Technical / VFX / Environment / UI / 3D Artist & Design", "studio": "Revulo Games", "period": "Jun 2021 – Aug 2023",
-    "platforms": ["switch", "xbox", "playstation", "windows", "ios", "steam"],
+    "slug": "super-box-delivery",
+    "group": "featured",
+    "title": "Super Box Delivery",
+    "role": "Technical / VFX / Environment / UI / 3D Artist & Design",
+    "studio": "Revulo Games",
+    "period": "Jun 2021 – Aug 2023",
+    "platforms": [
+      "switch",
+      "xbox",
+      "playstation",
+      "windows",
+      "ios",
+      "steam"
+    ],
     "summary": "Explore a vibrant, cartoon-inspired world, customize whimsical cars and navigate an ever-changing landscape with intuitive controls. As the delivery master, conquer challenges, earn achievements, and showcase your driving skills in this thrilling endless game. With universal appeal, it's an immersive escape for all ages.",
+    "intro": "One of the Revulo Games titles – as co-founder, I worked across the studio's whole lineup and was responsible for:",
+    "bullets": [
+      "Leading artistic direction and technical execution for titles published on Nintendo Switch, PlayStation, Xbox and Steam.",
+      "Acting as Product Owner and Game Designer – shaping project strategy, 3D/2D asset creation, environment design and VFX.",
+      "Producing technical promotional materials and video showcases built in Unity.",
+      "Runtime optimizations tailored to strict console hardware limits."
+    ],
     "about": {
       "lead": "Super Box Delivery: Beyond the Horizon houses an expansive landscape, seamlessly navigable with engaging controls that promise boundless entertainment.",
-      "paras": ["Within this captivating game, immerse yourself in a vibrant cartoon realm teeming with eccentric vehicles and a kaleidoscope of customization possibilities. Become the sole guardian of punctual deliveries, facing a myriad of dynamic challenges that test your driving finesse. Navigate through an ever-shifting terrain in this gripping endless driving saga. This game boasts an array of achievements and trials, urging you to showcase your mastery amid the chaos."]
+      "paras": [
+        "Within this captivating game, immerse yourself in a vibrant cartoon realm teeming with eccentric vehicles and a kaleidoscope of customization possibilities. Become the sole guardian of punctual deliveries, facing a myriad of dynamic challenges that test your driving finesse. Navigate through an ever-shifting terrain in this gripping endless driving saga. This game boasts an array of achievements and trials, urging you to showcase your mastery amid the chaos."
+      ]
     },
     "website": "https://www.revulogames.com/",
-    "imgs": ["64f5f30de05c93849a0a061d_superbox_delivery_screen1_optimized.jpg", "64f5f3122638a92e749c847f_superbox_delivery_screen2_optimized.jpg", "64f5f3153251a37c298a1b1b_superbox_delivery_screen3_optimized.jpg", "64f5f31917f515e82d1487be_superbox_delivery_screen4_optimized.jpg", "64f5f31db74696277b787c01_superbox_delivery_screen5_optimized.jpg", "64f5f32050f50f66f7cd66d6_superbox_delivery_screen6_optimized.jpg", "64f5f328b2064353a5c1caa6_superbox_ui_optimized.jpg"],
-    "yt": ["6ww8e7airVI", "jio4gxw54-s"]
+    "imgs": [
+      "64f5f30de05c93849a0a061d_superbox_delivery_screen1_optimized.jpg",
+      "64f5f3122638a92e749c847f_superbox_delivery_screen2_optimized.jpg",
+      "64f5f3153251a37c298a1b1b_superbox_delivery_screen3_optimized.jpg",
+      "64f5f31917f515e82d1487be_superbox_delivery_screen4_optimized.jpg",
+      "64f5f31db74696277b787c01_superbox_delivery_screen5_optimized.jpg",
+      "64f5f32050f50f66f7cd66d6_superbox_delivery_screen6_optimized.jpg",
+      "64f5f328b2064353a5c1caa6_superbox_ui_optimized.jpg"
+    ],
+    "yt": [
+      "6ww8e7airVI",
+      "jio4gxw54-s"
+    ]
   },
   {
-    "slug": "minigolf-adventure", "group": "featured", "title": "Minigolf Adventure",
-    "role": "Technical / VFX / Environment / UI / 3D Artist & Design", "studio": "Revulo Games", "period": "Jun 2021 – Aug 2023",
-    "platforms": ["switch", "xbox", "playstation", "windows", "steam"],
+    "slug": "minigolf-adventure",
+    "group": "featured",
+    "title": "Minigolf Adventure",
+    "role": "Technical / VFX / Environment / UI / 3D Artist & Design",
+    "studio": "Revulo Games",
+    "period": "Jun 2021 – Aug 2023",
+    "platforms": [
+      "switch",
+      "xbox",
+      "playstation",
+      "windows",
+      "steam"
+    ],
     "stat": "400,000+ copies sold",
     "summary": "A game sold over 400,000+ copies, multiple times reaching the top spot in Europe and ranking among the top 10 most popular games in the United States in the Nintendo Store. It offers over 200 meticulously crafted holes in four diverse environments. With captivating visuals and two physics modes, players navigate through challenging courses in five exciting game modes.",
     "intro": "In addition to defining the graphic style for the product and overseeing the visual layer of the project, I was responsible for:",
@@ -83,22 +185,54 @@
     ],
     "about": {
       "lead": "Minigolf Adventure, an immersive gaming experience crafted for solace-seekers and enthusiasts alike.",
-      "paras": ["Traversing through four distinct environments, players will discover over 200 meticulously crafted holes, each a testament to the artistry of mini-golf. The game captivates with its realistic ball physics, lending a unique character to every swing."],
+      "paras": [
+        "Traversing through four distinct environments, players will discover over 200 meticulously crafted holes, each a testament to the artistry of mini-golf. The game captivates with its realistic ball physics, lending a unique character to every swing."
+      ],
       "features": [
-        ["5 diverse game modes", "Arcade, High Score, Race, Hot Seat and Quickplay."],
-        ["Handcrafted levels", "Lush green forests, arid deserts and icy landscapes in the base game, plus Asia in the DLC – each with its own physics."],
-        ["Two physics modes", "Simulation, true to real-life physics, and unrealistic, where you can pause the ball mid-air and strike it in a different direction."],
-        ["30 ball skins", "Specially crafted skins that let players personalize their game."]
+        [
+          "5 diverse game modes",
+          "Arcade, High Score, Race, Hot Seat and Quickplay."
+        ],
+        [
+          "Handcrafted levels",
+          "Lush green forests, arid deserts and icy landscapes in the base game, plus Asia in the DLC – each with its own physics."
+        ],
+        [
+          "Two physics modes",
+          "Simulation, true to real-life physics, and unrealistic, where you can pause the ball mid-air and strike it in a different direction."
+        ],
+        [
+          "30 ball skins",
+          "Specially crafted skins that let players personalize their game."
+        ]
       ]
     },
     "website": "https://www.revulogames.com/",
-    "imgs": ["64f5d91ef2005cf7eccc2305_minigolf_screen_main_optimized.jpg", "64f5d92a93c1fcd9b5b42126_minigolf_screen_2_optimized.jpg", "64f5d93523d55b3b7792ec43_minigolf_screen_3_optimized.jpeg", "64f5d9398cdc87f3cd02f7f5_minigolf_screen_4_optimized.jpg", "64f5d9407bbaafe4afa978ca_minigolf_screen_5_optimized.jpg", "64f5d9443251a37c2969550b_minigolf_screen_6_optimized.jpeg", "64f5d94807403e919b9d398b_minigolf_screen_7_optimized.jpg", "64f5e332726ca70c2240d672_minigolf_ui_optimized.jpg"],
-    "yt": ["x3FkWjOUksw"]
+    "imgs": [
+      "64f5d91ef2005cf7eccc2305_minigolf_screen_main_optimized.jpg",
+      "64f5d92a93c1fcd9b5b42126_minigolf_screen_2_optimized.jpg",
+      "64f5d93523d55b3b7792ec43_minigolf_screen_3_optimized.jpeg",
+      "64f5d9398cdc87f3cd02f7f5_minigolf_screen_4_optimized.jpg",
+      "64f5d9407bbaafe4afa978ca_minigolf_screen_5_optimized.jpg",
+      "64f5d9443251a37c2969550b_minigolf_screen_6_optimized.jpeg",
+      "64f5d94807403e919b9d398b_minigolf_screen_7_optimized.jpg",
+      "64f5e332726ca70c2240d672_minigolf_ui_optimized.jpg"
+    ],
+    "yt": [
+      "x3FkWjOUksw"
+    ]
   },
   {
-    "slug": "house-fighters", "group": "featured", "title": "House Fighters: Total Mess",
-    "role": "Product Owner · Technical / VFX / Environment / UI / 3D Artist & Design", "studio": "Revulo Games", "period": "Jun 2021 – Aug 2023",
-    "platforms": ["switch", "xbox"],
+    "slug": "house-fighters",
+    "group": "featured",
+    "title": "House Fighters: Total Mess",
+    "role": "Product Owner · Technical / VFX / Environment / UI / 3D Artist & Design",
+    "studio": "Revulo Games",
+    "period": "Jun 2021 – Aug 2023",
+    "platforms": [
+      "switch",
+      "xbox"
+    ],
     "summary": "Experience the thrill of childhood imagination soaring to new heights! Battle it out in epic airplane fights set within the confines of familiar household spaces. With diverse planes, an array of weapons, and daring maneuvers, enjoy endless fun and strategy in every mission. I am the originator of the project and the person responsible for the graphic style and basic design.",
     "bullets": [
       "As the main Product Owner and creator of the title, I outlined the main game design and established the graphic style for the entire production.",
@@ -109,126 +243,369 @@
     ],
     "about": {
       "lead": "A PvE aerial arcade shooter where toy planes battle it out in everyday rooms.",
-      "paras": ["Released by Revulo Games on November 7, 2025 for Xbox One, Xbox Series X|S and Nintendo Switch. Fly through the bedroom, the kitchen, the garage and more, weaving around furniture in quick dogfights with small enemy aircraft – and rescue your toy friends in story-driven missions."],
+      "paras": [
+        "Released by Revulo Games on November 7, 2025 for Xbox One, Xbox Series X|S and Nintendo Switch. Fly through the bedroom, the kitchen, the garage and more, weaving around furniture in quick dogfights with small enemy aircraft – and rescue your toy friends in story-driven missions."
+      ],
       "features": [
-        ["Household arenas", "Everyday spaces turned into toy-sized battlefields, from the bedroom to the garage."],
-        ["Improvised arsenal", "Rockets and bombs, plus everyday items you pick up and use against enemies."],
-        ["5 aircraft types", "Each plane comes with its own strengths and weaknesses."],
-        ["Plane customization", "Stickers, paint jobs and color options to make your plane your own."],
-        ["Pick up and play", "Simple controls designed for casual play."]
+        [
+          "Household arenas",
+          "Everyday spaces turned into toy-sized battlefields, from the bedroom to the garage."
+        ],
+        [
+          "Improvised arsenal",
+          "Rockets and bombs, plus everyday items you pick up and use against enemies."
+        ],
+        [
+          "5 aircraft types",
+          "Each plane comes with its own strengths and weaknesses."
+        ],
+        [
+          "Plane customization",
+          "Stickers, paint jobs and color options to make your plane your own."
+        ],
+        [
+          "Pick up and play",
+          "Simple controls designed for casual play."
+        ]
       ]
     },
     "website": "https://www.revulogames.com/",
-    "imgs": ["64f6326d884d78c1502e03c8_housefighters_screen_1_optimized.jpg"],
-    "yt": ["0iqoGWALzeM", "Rs-6Nk8WPQ0"]
+    "imgs": [
+      "64f6326d884d78c1502e03c8_housefighters_screen_1_optimized.jpg"
+    ],
+    "yt": [
+      "0iqoGWALzeM",
+      "Rs-6Nk8WPQ0"
+    ]
   },
   {
-    "slug": "maze-blaze", "group": "featured", "title": "Maze Blaze",
-    "role": "Technical / VFX / Environment / UI / 3D Artist & Design", "studio": "Revulo Games", "period": "Jun 2021 – Aug 2023",
-    "platforms": ["switch", "xbox", "playstation", "windows", "ios", "steam"],
+    "slug": "maze-blaze",
+    "group": "featured",
+    "title": "Maze Blaze",
+    "role": "Technical / VFX / Environment / UI / 3D Artist & Design",
+    "studio": "Revulo Games",
+    "period": "Jun 2021 – Aug 2023",
+    "platforms": [
+      "switch",
+      "xbox",
+      "playstation",
+      "windows",
+      "ios",
+      "steam"
+    ],
     "summary": "An action-packed, roguelike shooter set in ever-changing mazes infested with aliens. Every maze is procedurally generated with random layouts and adversaries, creating unique challenges. Its vibrant visuals and dynamic gameplay promise an exhilarating experience in the heart of unpredictable chaos.",
+    "intro": "One of the Revulo Games titles – as co-founder, I worked across the studio's whole lineup and was responsible for:",
+    "bullets": [
+      "Leading artistic direction and technical execution for titles published on Nintendo Switch, PlayStation, Xbox and Steam.",
+      "Acting as Product Owner and Game Designer – shaping project strategy, 3D/2D asset creation, environment design and VFX.",
+      "Producing technical promotional materials and video showcases built in Unity.",
+      "Runtime optimizations tailored to strict console hardware limits."
+    ],
     "about": {
       "lead": "Maze Blaze is filled with endless possibilities. Lock and load, then enter at your own peril.",
-      "paras": ["Shoot and blast your way through alien-infested mazes in Maze Blaze, a roguelike action shooter that’s intense both in color and gameplay. Each maze is a procedurally generated level where the enemies, items, and the maze’s layout itself is random."],
+      "paras": [
+        "Shoot and blast your way through alien-infested mazes in Maze Blaze, a roguelike action shooter that’s intense both in color and gameplay. Each maze is a procedurally generated level where the enemies, items, and the maze’s layout itself is random."
+      ],
       "features": [
-        ["A spectacle of color", "A hyper-stylized, neon-color emblazoned roguelike with visuals that are stunning yet never overwhelming."],
-        ["Play your way", "Clear levels and bosses, or fight through endless waves of mazes – solo or with a friend."],
-        ["Maze of possibilities", "Randomly generated mazes, enemies, and items make every playthrough its own."]
+        [
+          "A spectacle of color",
+          "A hyper-stylized, neon-color emblazoned roguelike with visuals that are stunning yet never overwhelming."
+        ],
+        [
+          "Play your way",
+          "Clear levels and bosses, or fight through endless waves of mazes – solo or with a friend."
+        ],
+        [
+          "Maze of possibilities",
+          "Randomly generated mazes, enemies, and items make every playthrough its own."
+        ]
       ]
     },
     "website": "https://www.revulogames.com/",
-    "imgs": ["64f61da9686ec4e3580cda15_mazeblaze_screen_1_optimized.jpg", "64f61dae80d4d83a40f855e2_mazeblaze_screen_2_optimized.jpeg", "64f61db180d4d83a40f85d51_mazeblaze_screen_3_optimized.jpeg", "64f61db48eb3ea391a3fd59d_mazeblaze_screen_4_optimized.jpeg", "64f61db67a39e55de0af492e_mazeblaze_screen_5_optimized.jpeg", "64f61db9689fbf402b5c5e01_mazeblaze_screen_6_optimized.jpeg", "64f61dbb8b5145d264597610_mazeblaze_screen_7_optimized.jpeg", "64fa5775321bc75b846d6a5f_mazeblaze_ui_optimized.jpg"],
-    "yt": ["IntgPgiUBsY"]
+    "imgs": [
+      "64f61da9686ec4e3580cda15_mazeblaze_screen_1_optimized.jpg",
+      "64f61dae80d4d83a40f855e2_mazeblaze_screen_2_optimized.jpeg",
+      "64f61db180d4d83a40f85d51_mazeblaze_screen_3_optimized.jpeg",
+      "64f61db48eb3ea391a3fd59d_mazeblaze_screen_4_optimized.jpeg",
+      "64f61db67a39e55de0af492e_mazeblaze_screen_5_optimized.jpeg",
+      "64f61db9689fbf402b5c5e01_mazeblaze_screen_6_optimized.jpeg",
+      "64f61dbb8b5145d264597610_mazeblaze_screen_7_optimized.jpeg",
+      "64fa5775321bc75b846d6a5f_mazeblaze_ui_optimized.jpg"
+    ],
+    "yt": [
+      "IntgPgiUBsY"
+    ]
   },
   {
-    "slug": "evil-lands", "group": "featured", "title": "Evil Lands",
-    "role": "Environment / VFX / Technical / 3D Artist", "studio": "Rage Quit Games", "period": "Aug 2017 – Feb 2021",
-    "platforms": ["ios", "android"],
+    "slug": "evil-lands",
+    "group": "featured",
+    "title": "Evil Lands",
+    "role": "Environment / VFX / Technical / 3D Artist",
+    "studio": "Rage Quit Games",
+    "period": "Aug 2017 – Feb 2021",
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "summary": "Expansive MMORPG set in a fantasy world. Explore diverse landscapes, face powerful foes, and participate in PvP battles. Collaborate globally, customize characters, master magic and skills. Experience captivating visuals and soundscapes, rewriting the legend of an epic fantasy adventure in this ultimate RPG campaign.",
+    "bullets": [
+      "Delivered high-quality 3D assets, environment art and level design for a large multiplayer mobile RPG.",
+      "Improved performance and visuals through custom materials, HLSL shaders and Unity optimizations as a Technical Artist.",
+      "Developed real-time VFX integrated with gameplay mechanics via C# scripting.",
+      "Maintained distributed Git version control workflows."
+    ],
     "about": {
       "lead": "In this visually stunning and sonically captivating universe, players rewrite the legends of epic fantasy adventures.",
-      "paras": ["Evil Lands invites players into a sprawling MMORPG world where they step into the shoes of a Warrior, Wizard, or Assassin, each offering unique abilities and playstyles."],
+      "paras": [
+        "Evil Lands invites players into a sprawling MMORPG world where they step into the shoes of a Warrior, Wizard, or Assassin, each offering unique abilities and playstyles."
+      ],
       "features": [
-        ["Vast, immersive world", "A crafted open world from mystical forests to treacherous deserts, with 25 missions and legendary bosses."],
-        ["Community", "Alliances, clans and events alongside players from around the world."],
-        ["Character mastery", "Customization, legendary loot and combat skills for multiplayer arenas and raids."]
+        [
+          "Vast, immersive world",
+          "A crafted open world from mystical forests to treacherous deserts, with 25 missions and legendary bosses."
+        ],
+        [
+          "Community",
+          "Alliances, clans and events alongside players from around the world."
+        ],
+        [
+          "Character mastery",
+          "Customization, legendary loot and combat skills for multiplayer arenas and raids."
+        ]
       ]
     },
     "website": "https://ragequitgames.com/games/evil-lands/",
-    "imgs": ["64fa4b64b1e1d331a801d542_evillands_screen_-05_optimized.jpg", "64fa4b74fc3e102b1cc5a125_evillands_screen_-19_optimized.jpg", "64fa4b7c6b77db1c6ee4e5d9_evillands_screen_-03_optimized.jpg", "64fa4b80aac5c1c3d0f089e7_evillands_screen_-02_optimized.jpg", "64fa4b86f3756e8b44ee18db_evillands_screen_-01_optimized.jpg", "64fa4b8a8f52e47a1520a463_evillands_screen_-07_optimized.jpg", "64fa4b8eabe05eccc8cd44fb_evillands_screen_-10_optimized.jpg"],
-    "yt": ["cZtg2ThtOxA", "3e8frVnDFWg"]
+    "imgs": [
+      "64fa4b64b1e1d331a801d542_evillands_screen_-05_optimized.jpg",
+      "64fa4b74fc3e102b1cc5a125_evillands_screen_-19_optimized.jpg",
+      "64fa4b7c6b77db1c6ee4e5d9_evillands_screen_-03_optimized.jpg",
+      "64fa4b80aac5c1c3d0f089e7_evillands_screen_-02_optimized.jpg",
+      "64fa4b86f3756e8b44ee18db_evillands_screen_-01_optimized.jpg",
+      "64fa4b8a8f52e47a1520a463_evillands_screen_-07_optimized.jpg",
+      "64fa4b8eabe05eccc8cd44fb_evillands_screen_-10_optimized.jpg"
+    ],
+    "yt": [
+      "cZtg2ThtOxA",
+      "3e8frVnDFWg"
+    ]
   },
   {
-    "slug": "cyber-pool", "group": "other", "title": "Cyber Pool",
-    "role": "Technical / VFX / Environment / UI / 3D Artist & Design", "studio": "Revulo Games", "period": "Jun 2021 – Aug 2023",
-    "platforms": ["switch", "xbox", "playstation", "windows", "ios", "steam"],
-    "summary": "A neon-soaked pool game from Revulo Games.",
+    "slug": "cyber-pool",
+    "group": "other",
+    "title": "Cyber Pool",
+    "role": "Technical / VFX / Environment / UI / 3D Artist & Design",
+    "studio": "Revulo Games",
+    "period": "Jun 2021 – Aug 2023",
+    "platforms": [
+      "switch",
+      "xbox",
+      "playstation",
+      "windows",
+      "ios",
+      "steam"
+    ],
+    "summary": "A neon-styled arcade take on billiards – smash the cue ball into brightly colored balls across 40 tables that get more chaotic as you go. Easy to learn, hard to master.",
+    "intro": "One of the Revulo Games titles – as co-founder, I worked across the studio's whole lineup and was responsible for:",
+    "bullets": [
+      "Leading artistic direction and technical execution for titles published on Nintendo Switch, PlayStation, Xbox and Steam.",
+      "Acting as Product Owner and Game Designer – shaping project strategy, 3D/2D asset creation, environment design and VFX.",
+      "Producing technical promotional materials and video showcases built in Unity.",
+      "Runtime optimizations tailored to strict console hardware limits."
+    ],
+    "about": {
+      "lead": "Classic pool, rebuilt as a glowing arcade game with six ways to play.",
+      "paras": [
+        "Released by Revulo Games on Nintendo Switch on March 10, 2022, followed by Steam and console versions later that year."
+      ],
+      "features": [
+        [
+          "6 game modes",
+          "Classic (clear the table in three strokes), Arcade (unlimited strokes), Challenge (pocket balls in order), plus Cooperation, Race and Battle."
+        ],
+        [
+          "40 tables",
+          "Unique layouts that become more chaotic the further you get."
+        ],
+        [
+          "Local multiplayer",
+          "1–4 players on one system, co-op or head-to-head."
+        ]
+      ]
+    },
     "website": "https://www.revulogames.com/games/cyber-pool.html",
-    "imgs": ["650193e970c508fc163e6891_cyberpool_screen5_optimized.jpeg", "65019416bd7f8fb9e2025e26_cyberpool_screen1_optimized.jpeg", "6501941b9726dbc324a98266_cyberpool_screen2_optimized.jpeg", "6501941eb3681a91900e7fd1_cyberpool_screen3_optimized.jpeg", "6501942090eb0f80ff02db2a_cyberpool_screen4_optimized.jpeg", "650194264c32024cb059eb14_cyberpool_screen6_optimized.jpeg"],
-    "yt": ["0l1m44hiRp0"]
+    "imgs": [
+      "650193e970c508fc163e6891_cyberpool_screen5_optimized.jpeg",
+      "65019416bd7f8fb9e2025e26_cyberpool_screen1_optimized.jpeg",
+      "6501941b9726dbc324a98266_cyberpool_screen2_optimized.jpeg",
+      "6501941eb3681a91900e7fd1_cyberpool_screen3_optimized.jpeg",
+      "6501942090eb0f80ff02db2a_cyberpool_screen4_optimized.jpeg",
+      "650194264c32024cb059eb14_cyberpool_screen6_optimized.jpeg"
+    ],
+    "yt": [
+      "0l1m44hiRp0"
+    ]
   },
   {
-    "slug": "virtual-walk-indea", "group": "other", "title": "Virtual Walk – INDEA",
-    "role": "Unity Developer / 3D Artist", "studio": "Digital Walk", "period": "Sep 2016 – Aug 2017",
-    "platforms": ["windows"],
+    "slug": "virtual-walk-indea",
+    "group": "other",
+    "title": "Virtual Walk – INDEA",
+    "role": "Unity Developer / 3D Artist",
+    "studio": "Digital Walk",
+    "period": "Sep 2016 – Aug 2017",
+    "platforms": [
+      "windows"
+    ],
     "summary": "I made this app for INDEA. It's all about diving into PBR textures, messing with lightmaps, reflection probes, and playing around with Substance. Oh, and I'm learning to make things run smoother too!",
-    "imgs": ["64f1cafd33d071451771a285_app_1_1_optimized.jpeg", "64f1cb02d4dab2b32b451f83_app_1_2_optimized.jpeg", "64f1cb058421df3c8ff73841_app_1_3_optimized.jpeg", "64f1cb08e6b212d8af288105_app_1_4_optimized.jpeg", "64f1cb0c59804b755220eb30_app_1_5_optimized.jpeg", "64f1cb0f40c8a919563bc411_app_1_6_optimized.jpeg"],
-    "yt": ["som3GSVMmkc"]
+    "imgs": [
+      "64f1cafd33d071451771a285_app_1_1_optimized.jpeg",
+      "64f1cb02d4dab2b32b451f83_app_1_2_optimized.jpeg",
+      "64f1cb058421df3c8ff73841_app_1_3_optimized.jpeg",
+      "64f1cb08e6b212d8af288105_app_1_4_optimized.jpeg",
+      "64f1cb0c59804b755220eb30_app_1_5_optimized.jpeg",
+      "64f1cb0f40c8a919563bc411_app_1_6_optimized.jpeg"
+    ],
+    "yt": [
+      "som3GSVMmkc"
+    ]
   },
   {
-    "slug": "virtual-walk-archeton-turkus", "group": "other", "title": "Virtual Walk – Archeton Turkus",
-    "role": "Unity Developer / 3D Artist", "studio": "Digital Walk", "period": "Sep 2016 – Aug 2017",
-    "platforms": ["windows"],
+    "slug": "virtual-walk-archeton-turkus",
+    "group": "other",
+    "title": "Virtual Walk – Archeton Turkus",
+    "role": "Unity Developer / 3D Artist",
+    "studio": "Digital Walk",
+    "period": "Sep 2016 – Aug 2017",
+    "platforms": [
+      "windows"
+    ],
     "summary": "I whipped up another Unity app to let users explore their custom building designs and give companies a slick way to showcase their products.",
-    "imgs": ["64f1c26babe5e50b2ea4e152_app_2_1_optimized.jpeg", "64f1c2792cf058e9ad7efa0b_app_2_2_optimized.jpeg", "64f1c27daec1688d88f6226c_app_2_3_optimized.jpeg", "64f1c281d4dab2b32b3b5dd6_app_2_4_optimized.jpeg", "64f1c28472eb3ced2ca3bb23_app_2_5_optimized.jpeg", "64f1c28bdbffae8a630b075e_app_2_6_optimized.jpeg"],
+    "imgs": [
+      "64f1c26babe5e50b2ea4e152_app_2_1_optimized.jpeg",
+      "64f1c2792cf058e9ad7efa0b_app_2_2_optimized.jpeg",
+      "64f1c27daec1688d88f6226c_app_2_3_optimized.jpeg",
+      "64f1c281d4dab2b32b3b5dd6_app_2_4_optimized.jpeg",
+      "64f1c28472eb3ced2ca3bb23_app_2_5_optimized.jpeg",
+      "64f1c28bdbffae8a630b075e_app_2_6_optimized.jpeg"
+    ],
     "yt": []
   },
   {
-    "slug": "virtual-walk-archeton-heliodor", "group": "other", "title": "Virtual Walk – Archeton Heliodor",
-    "role": "Unity Developer / 3D Artist", "studio": "Digital Walk", "period": "Sep 2016 – Aug 2017",
-    "platforms": ["windows", "ios", "android"],
+    "slug": "virtual-walk-archeton-heliodor",
+    "group": "other",
+    "title": "Virtual Walk – Archeton Heliodor",
+    "role": "Unity Developer / 3D Artist",
+    "studio": "Digital Walk",
+    "period": "Sep 2016 – Aug 2017",
+    "platforms": [
+      "windows",
+      "ios",
+      "android"
+    ],
     "summary": "I've got this cool app designed for Archeton. You can take a virtual walk using Google Cardboard tech, and even do a 360° walk without VR goggles.",
-    "imgs": ["64f1c0dea440914b4a0805a4_app_3_1_optimized.jpeg", "64f1c0e64d3c9690e96bd975_app_3_2_optimized.jpeg", "64f1c03c5c0dca2a22351967_app_3_3.jpeg", "64f1c0447d6477504d35c869_app_3_4.jpeg", "64f1c10b95e4d28a0d8a6441_app_3_5_optimized.jpeg"],
-    "yt": ["mUrrCUIXe98"]
+    "imgs": [
+      "64f1c0dea440914b4a0805a4_app_3_1_optimized.jpeg",
+      "64f1c0e64d3c9690e96bd975_app_3_2_optimized.jpeg",
+      "64f1c03c5c0dca2a22351967_app_3_3.jpeg",
+      "64f1c0447d6477504d35c869_app_3_4.jpeg",
+      "64f1c10b95e4d28a0d8a6441_app_3_5_optimized.jpeg"
+    ],
+    "yt": [
+      "mUrrCUIXe98"
+    ]
   },
   {
-    "slug": "misc-projects", "group": "other", "title": "Misc Projects",
-    "role": "Unity Developer / 3D Artist", "studio": "Digital Walk", "period": "Sep 2016 – Aug 2017",
-    "platforms": ["windows"],
+    "slug": "misc-projects",
+    "group": "other",
+    "title": "Misc Projects",
+    "role": "Unity Developer / 3D Artist",
+    "studio": "Digital Walk",
+    "period": "Sep 2016 – Aug 2017",
+    "platforms": [
+      "windows"
+    ],
     "summary": "I've got these cool apps that can mimic the sun's glow on stuff made with photogrammetry. Plus, I've got these rad virtual tours around architectural projects, all cooked up in Unity with some Blender magic.",
-    "imgs": ["64f1b916127ccf94e5024c76_app_4_1.jpeg", "64f1bc8372f97d02aeb5ccb2_app_4_2.jpeg", "64f1bc86aec1688d88efda81_app_4_3.jpeg", "64f1bc8ba753c1ed937e8a1b_app_4_4.jpeg", "64f1bc915dfecc2bdce47948_app_4_5.jpeg", "64f1c219abe5e50b2ea48849_app_4_6_optimized.jpeg"],
-    "yt": ["1j3fNIRnS_E"]
+    "imgs": [
+      "64f1b916127ccf94e5024c76_app_4_1.jpeg",
+      "64f1bc8372f97d02aeb5ccb2_app_4_2.jpeg",
+      "64f1bc86aec1688d88efda81_app_4_3.jpeg",
+      "64f1bc8ba753c1ed937e8a1b_app_4_4.jpeg",
+      "64f1bc915dfecc2bdce47948_app_4_5.jpeg",
+      "64f1c219abe5e50b2ea48849_app_4_6_optimized.jpeg"
+    ],
+    "yt": [
+      "1j3fNIRnS_E"
+    ]
   },
   {
-    "slug": "lego-batmobile-render", "group": "other", "title": "LEGO Batmobile",
-    "role": "3D Artist", "studio": "Personal", "period": "",
+    "slug": "lego-batmobile-render",
+    "group": "other",
+    "title": "LEGO Batmobile",
+    "role": "3D Artist",
+    "studio": "Personal",
+    "period": "",
     "platforms": [],
     "summary": "Sometimes you have to take care of your inner child. Cooked up using LEGO Digital Designer, Blender 3D/Cycles, and spiced up with Photoshop and Lightroom.",
-    "imgs": ["64f4f6c2bfb0eee68507a7c1_render_3_1_optimized.jpeg", "64f4f6c839f5ae1e379b06ff_render_3_2_optimized.jpeg", "64f4f6cf08cf3526fd11426d_render_3_3_optimized.jpeg", "64f4f6d4bca35ec50ef8b7db_render_3_4_optimized.jpeg", "64f4f6d99f516e066af9d273_render_3_5_optimized.jpeg"],
+    "imgs": [
+      "64f4f6c2bfb0eee68507a7c1_render_3_1_optimized.jpeg",
+      "64f4f6c839f5ae1e379b06ff_render_3_2_optimized.jpeg",
+      "64f4f6cf08cf3526fd11426d_render_3_3_optimized.jpeg",
+      "64f4f6d4bca35ec50ef8b7db_render_3_4_optimized.jpeg",
+      "64f4f6d99f516e066af9d273_render_3_5_optimized.jpeg"
+    ],
     "yt": []
   },
   {
-    "slug": "ruczaj-zaborze-concepts", "group": "other", "title": "Ruczaj-Zaborze Concepts 1",
-    "role": "3D Artist", "studio": "ZBiFB Politechnika Krakowska", "period": "Jun – Jul 2014",
+    "slug": "ruczaj-zaborze-concepts",
+    "group": "other",
+    "title": "Ruczaj-Zaborze Concepts 1",
+    "role": "3D Artist",
+    "studio": "ZBiFB Politechnika Krakowska",
+    "period": "Jun – Jul 2014",
     "platforms": [],
     "summary": "Working on a conceptual revamp of the \"Ruczaj-Zaborze\" housing estate – here's version 1!",
-    "imgs": ["64f4fa8173af2f453febbcc2_render_7_1_optimized.jpeg", "64f4fa86bfb0eee6850b8428_render_7_2_optimized.jpeg", "64f4fa8a75a4071825e86609_render_7_3_optimized.jpeg", "64f4fa90a5f2e8bea5378a66_render_7_4_optimized.jpeg", "64f4fa9571f8213468f6c6de_render_7_5_optimized.jpeg"],
+    "imgs": [
+      "64f4fa8173af2f453febbcc2_render_7_1_optimized.jpeg",
+      "64f4fa86bfb0eee6850b8428_render_7_2_optimized.jpeg",
+      "64f4fa8a75a4071825e86609_render_7_3_optimized.jpeg",
+      "64f4fa90a5f2e8bea5378a66_render_7_4_optimized.jpeg",
+      "64f4fa9571f8213468f6c6de_render_7_5_optimized.jpeg"
+    ],
     "yt": []
   },
   {
-    "slug": "ruczaj-zaborze-concepts-2", "group": "other", "title": "Ruczaj-Zaborze Concepts 2",
-    "role": "3D Artist", "studio": "ZBiFB Politechnika Krakowska", "period": "Jun – Jul 2014",
+    "slug": "ruczaj-zaborze-concepts-2",
+    "group": "other",
+    "title": "Ruczaj-Zaborze Concepts 2",
+    "role": "3D Artist",
+    "studio": "ZBiFB Politechnika Krakowska",
+    "period": "Jun – Jul 2014",
     "platforms": [],
     "summary": "Working on a conceptual revamp of the \"Ruczaj-Zaborze\" housing estate – here's version 2!",
-    "imgs": ["64f4fbf25f940d47fbdb7789_render_8_1_optimized.jpeg", "64f4fbf7142b815fdd21a790_render_8_2_optimized.jpeg", "64f4fbfbe5685905ad718e64_render_8_3_optimized.jpeg", "64f4fc0075a4071825e9b03d_render_8_4_optimized.jpeg", "64f4fc04a5f2e8bea5390536_render_8_5_optimized.jpeg"],
+    "imgs": [
+      "64f4fbf25f940d47fbdb7789_render_8_1_optimized.jpeg",
+      "64f4fbf7142b815fdd21a790_render_8_2_optimized.jpeg",
+      "64f4fbfbe5685905ad718e64_render_8_3_optimized.jpeg",
+      "64f4fc0075a4071825e9b03d_render_8_4_optimized.jpeg",
+      "64f4fc04a5f2e8bea5390536_render_8_5_optimized.jpeg"
+    ],
     "yt": []
   },
   {
-    "slug": "renders", "group": "other", "title": "Blender Renders",
-    "role": "3D Artist", "studio": "Personal", "period": "",
+    "slug": "renders",
+    "group": "other",
+    "title": "Blender Renders",
+    "role": "3D Artist",
+    "studio": "Personal",
+    "period": "",
     "platforms": [],
     "summary": "Whipped up for training! I used Blender 3D/Cycles, along with a sprinkle of Photoshop and Lightroom.",
-    "imgs": ["64f4f5eb89a029c41ff1c8d4_render_1_optimized.jpeg", "64f4f6a0be17b6544a766eb0_render_2_optimized.jpeg", "64f4f77f58f6038b2af62136_render_4_optimized.jpeg", "64f4fa36bfb0eee6850b40cf_render_5_optimized.jpeg", "64f4fa5fbca35ec50efc4447_render_6_optimized.jpeg"],
+    "imgs": [
+      "64f4f5eb89a029c41ff1c8d4_render_1_optimized.jpeg",
+      "64f4f6a0be17b6544a766eb0_render_2_optimized.jpeg",
+      "64f4f77f58f6038b2af62136_render_4_optimized.jpeg",
+      "64f4fa36bfb0eee6850b40cf_render_5_optimized.jpeg",
+      "64f4fa5fbca35ec50efc4447_render_6_optimized.jpeg"
+    ],
     "yt": []
   }
 ]
