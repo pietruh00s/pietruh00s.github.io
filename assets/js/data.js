@@ -230,10 +230,9 @@ window.PROJECTS = [
   "period": "Jun 2021 – Aug 2023",
   "platforms": [
    "switch",
-   "xbox",
-   "playstation"
+   "xbox"
   ],
-  "summary": "Experience the thrill of childhood imagination soaring to new heights! Battle it out in epic airplane fights set within the confines of familiar household spaces. With diverse planes, an array of weapons, and daring maneuvers, enjoy endless fun and strategy for both solo adventurers and multiplayer enthusiasts. I am the originator of the project and the person responsible for the graphic style and basic design.",
+  "summary": "Experience the thrill of childhood imagination soaring to new heights! Battle it out in epic airplane fights set within the confines of familiar household spaces. With diverse planes, an array of weapons, and daring maneuvers, enjoy endless fun and strategy in every mission. I am the originator of the project and the person responsible for the graphic style and basic design.",
   "bullets": [
    "As the main Product Owner and creator of the title, I outlined the main game design and established the graphic style for the entire production.",
    "Collaborated with programmers on implementing mechanics, graphic artists on asset production and consistent stylistics, and game designers on gameplay elements.",
