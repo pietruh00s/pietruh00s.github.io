@@ -223,7 +223,7 @@ window.PROJECTS = [
  {
   "slug": "house-fighters",
   "group": "featured",
-  "title": "House Fighters",
+  "title": "House Fighters: Total Mess",
   "emoji": "🛩️",
   "role": "Product Owner · Technical / VFX / Environment / UI / 3D Artist & Design",
   "studio": "Revulo Games",
@@ -241,6 +241,34 @@ window.PROJECTS = [
    "Created various versions of prototypes, both stylistic and related to different environments.",
    "Created game teasers based solely on the Unity engine and the tools available in it."
   ],
+  "about": {
+   "lead": "A PvE aerial arcade shooter where toy planes battle it out in everyday rooms.",
+   "paras": [
+    "Released by Revulo Games on November 7, 2025 for Xbox One, Xbox Series X|S and Nintendo Switch. Fly through the bedroom, the kitchen, the garage and more, weaving around furniture in quick dogfights with small enemy aircraft – and rescue your toy friends in story-driven missions."
+   ],
+   "features": [
+    [
+     "Household arenas",
+     "Everyday spaces turned into toy-sized battlefields, from the bedroom to the garage."
+    ],
+    [
+     "Improvised arsenal",
+     "Rockets and bombs, plus everyday items you pick up and use against enemies."
+    ],
+    [
+     "5 aircraft types",
+     "Each plane comes with its own strengths and weaknesses."
+    ],
+    [
+     "Plane customization",
+     "Stickers, paint jobs and color options to make your plane your own."
+    ],
+    [
+     "Pick up and play",
+     "Simple controls designed for casual play."
+    ]
+   ]
+  },
   "website": "https://www.revulogames.com/",
   "imgs": [
    "assets/img/house-fighters/01"
