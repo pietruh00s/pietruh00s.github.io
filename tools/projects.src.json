@@ -38,6 +38,17 @@
       "Collaborated with animators, 3D artists, and 2D artists to refine visuals and maximize the impact for the project’s soft release.",
       "Facilitated the team’s transition from Unreal Engine to Unity, providing guidance and support for a smooth workflow shift."
     ],
+    "about": {
+      "lead": "The successor to Real Boxing 2, rebuilt around real-time PvP – you build your own fighter and step into the ring against players from around the world.",
+      "paras": ["After a technical soft launch in April 2024, the game went through a US soft launch on Android from November 21 to 30, 2024. Players fought over 32,500 bouts, matchmaking ran without issues, 95.3% of players completed the tutorial – more than in Real Boxing 2 – and over 95% of sessions were failure-free."],
+      "features": [
+        ["Real-time PvP", "Live multiplayer bouts where timing, blocking and spacing decide the fight."],
+        ["Ranked ladder", "Climb ranked divisions to elite tiers and defend your spot on the global ladder."],
+        ["Boxer customization", "Define a fighting style, boost stats and build a signature look with unlockable gear."],
+        ["Fame Road", "The main progression path – from local gym hero to global superstar."],
+        ["Friends & missions", "Challenge friends directly and complete daily missions for rewards."]
+      ]
+    },
     "website": "https://play.google.com/store/apps/details?id=com.vividgames.realboxing3",
     "imgs": ["675b6a468e4f936967178f47_unnamed.png"],
     "yt": ["eFBMmeljezQ", "BNF71tthc8o"]
