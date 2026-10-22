@@ -38,7 +38,7 @@ window.PROJECTS = [
   "emoji": "🥊",
   "role": "Senior Technical Artist",
   "studio": "Vivid Games",
-  "period": "Oct 2023 – May 2024",
+  "period": "Oct 2023 – Jun 2024",
   "platforms": [
    "ios",
    "android"
