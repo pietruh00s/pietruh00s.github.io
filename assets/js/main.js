@@ -106,7 +106,7 @@ function renderLists() {
       <span class="card__go" aria-hidden="true">→</span>
       <div class="card__body">
         <div class="card__meta mono"><span>${esc(metaLine(p))}</span></div>
-        <h3 class="card__title">${esc(p.title)} ${p.emoji}</h3>
+        <h3 class="card__title">${esc(p.title)}</h3>
         <p class="card__role">${esc(p.role)}</p>
         ${platsHTML(p)}
       </div>
@@ -115,7 +115,7 @@ function renderLists() {
   $('[data-group="other"]').innerHTML = other.map((p, i) => `
     <a class="tile reveal" href="#p/${p.slug}" style="--d:${(i % 4) * .06}s">
       <div class="tile__media"><img src="${p.imgs[0]}-sm.webp" alt="" loading="lazy"></div>
-      <h3 class="tile__title">${esc(p.title)} ${p.emoji}</h3>
+      <h3 class="tile__title">${esc(p.title)}</h3>
       <p class="tile__meta mono">${esc(p.role)}</p>
     </a>`).join("");
 }
@@ -155,7 +155,7 @@ function caseHTML(p) {
     <div class="wrap">
       <header class="case__head">
         <p class="mono idx">${esc(metaLine(p) || "Project")}</p>
-        <h1 id="case-title">${esc(p.title)} ${p.emoji}</h1>
+        <h1 id="case-title">${esc(p.title)}</h1>
         <p class="case__role mono">${esc(p.role)}</p>
       </header>
       <div class="case__cols">
