@@ -20,6 +20,34 @@ window.PROJECTS = [
    "Created missing assets, extended Unity with custom tools, and trained team members to work efficiently with them.",
    "Migrated project to URP and then to Unity 6 matching new standards of rendering in shader features like Render Graph support."
   ],
+  "about": {
+   "lead": "Ten Square Games’ third hunting title – and the first built as a pure skill game, where precision, reaction time and split-second decisions matter more than exploration or resource management.",
+   "paras": [
+    "Trophy Hunter launched globally on iOS and Android on July 3, 2025, after a pre-registration campaign that gathered over 500,000 players on Google Play. Matches are fast, real-time 1v1 sniper duels played over three rounds, with only three shots per duel – so every trigger pull counts."
+   ],
+   "features": [
+    [
+     "Nine arenas",
+     "From Yukon, Montana and Kamchatka to the savanna, Botswana, Egypt, a deep jungle, a lost city in Burma and Java – each with its own native wildlife."
+    ],
+    [
+     "20+ weapons",
+     "Unlocked and upgraded with cards, each tuned by damage, bullet speed, zoom and slow-motion duration."
+    ],
+    [
+     "Special ammo",
+     "Four ammo types with distinct effects, such as extra damage or a score boost."
+    ],
+    [
+     "Hunter's Lodge",
+     "An upgradeable personal base that doubles as a trophy room for your best hunts."
+    ],
+    [
+     "Leagues & clubs",
+     "Seasonal leagues, global leaderboards and clubs, plus a daily Golden Shot precision challenge."
+    ]
+   ]
+  },
   "imgs": [
    "assets/img/trophy-hunter/01",
    "assets/img/trophy-hunter/02",
