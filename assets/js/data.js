@@ -56,7 +56,8 @@ window.PROJECTS = [
    "assets/img/trophy-hunter/06",
    "assets/img/trophy-hunter/07"
   ],
-  "yt": []
+  "yt": [],
+  "tint": "#eb915c"
  },
  {
   "slug": "real-boxing-3",
@@ -113,7 +114,8 @@ window.PROJECTS = [
   "yt": [
    "eFBMmeljezQ",
    "BNF71tthc8o"
-  ]
+  ],
+  "tint": "#5c91eb"
  },
  {
   "slug": "super-box-delivery",
@@ -157,7 +159,8 @@ window.PROJECTS = [
   "yt": [
    "6ww8e7airVI",
    "jio4gxw54-s"
-  ]
+  ],
+  "tint": "#5cd9eb"
  },
  {
   "slug": "minigolf-adventure",
@@ -221,7 +224,8 @@ window.PROJECTS = [
   ],
   "yt": [
    "x3FkWjOUksw"
-  ]
+  ],
+  "tint": "#5cd9eb"
  },
  {
   "slug": "house-fighters",
@@ -277,7 +281,8 @@ window.PROJECTS = [
   "yt": [
    "0iqoGWALzeM",
    "Rs-6Nk8WPQ0"
-  ]
+  ],
+  "tint": "#eb915c"
  },
  {
   "slug": "maze-blaze",
@@ -335,7 +340,8 @@ window.PROJECTS = [
   ],
   "yt": [
    "IntgPgiUBsY"
-  ]
+  ],
+  "tint": "#eb915c"
  },
  {
   "slug": "evil-lands",
@@ -388,7 +394,8 @@ window.PROJECTS = [
   "yt": [
    "cZtg2ThtOxA",
    "3e8frVnDFWg"
-  ]
+  ],
+  "tint": "#ebb55c"
  },
  {
   "slug": "cyber-pool",
@@ -444,7 +451,8 @@ window.PROJECTS = [
   ],
   "yt": [
    "0l1m44hiRp0"
-  ]
+  ],
+  "tint": "#b55ceb"
  },
  {
   "slug": "virtual-walk-indea",
@@ -467,7 +475,8 @@ window.PROJECTS = [
   ],
   "yt": [
    "som3GSVMmkc"
-  ]
+  ],
+  "tint": "#ebb55c"
  },
  {
   "slug": "virtual-walk-archeton-turkus",
@@ -488,7 +497,8 @@ window.PROJECTS = [
    "assets/img/virtual-walk-archeton-turkus/05",
    "assets/img/virtual-walk-archeton-turkus/06"
   ],
-  "yt": []
+  "yt": [],
+  "tint": "#b5eb5c"
  },
  {
   "slug": "virtual-walk-archeton-heliodor",
@@ -512,7 +522,8 @@ window.PROJECTS = [
   ],
   "yt": [
    "mUrrCUIXe98"
-  ]
+  ],
+  "tint": "#b5eb5c"
  },
  {
   "slug": "misc-projects",
@@ -535,7 +546,8 @@ window.PROJECTS = [
   ],
   "yt": [
    "1j3fNIRnS_E"
-  ]
+  ],
+  "tint": "#ebd95c"
  },
  {
   "slug": "lego-batmobile-render",
@@ -553,7 +565,8 @@ window.PROJECTS = [
    "assets/img/lego-batmobile-render/04",
    "assets/img/lego-batmobile-render/05"
   ],
-  "yt": []
+  "yt": [],
+  "tint": "#35f2a7"
  },
  {
   "slug": "ruczaj-zaborze-concepts",
@@ -571,7 +584,8 @@ window.PROJECTS = [
    "assets/img/ruczaj-zaborze-concepts/04",
    "assets/img/ruczaj-zaborze-concepts/05"
   ],
-  "yt": []
+  "yt": [],
+  "tint": "#eb915c"
  },
  {
   "slug": "ruczaj-zaborze-concepts-2",
@@ -589,7 +603,8 @@ window.PROJECTS = [
    "assets/img/ruczaj-zaborze-concepts-2/04",
    "assets/img/ruczaj-zaborze-concepts-2/05"
   ],
-  "yt": []
+  "yt": [],
+  "tint": "#eb915c"
  },
  {
   "slug": "renders",
@@ -607,6 +622,7 @@ window.PROJECTS = [
    "assets/img/renders/04",
    "assets/img/renders/05"
   ],
-  "yt": []
+  "yt": [],
+  "tint": "#ebb55c"
  }
 ];

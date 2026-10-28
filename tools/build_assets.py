@@ -47,6 +47,23 @@ def logo(src: Path, dst: Path, size: int = 160):
     canvas.save(dst, "WEBP", quality=90, method=6)
 
 
+def tint(img: Path) -> str:
+    """Signature hue of a project's key art, normalised to one lightness/saturation so every tint reads on the dark UI."""
+    import colorsys
+    from PIL import Image
+    px = Image.open(img).convert("RGB").resize((64, 64)).getdata()
+    buckets = [0.0] * 24
+    for r, g, b in px:
+        h, s, v = colorsys.rgb_to_hsv(r / 255, g / 255, b / 255)
+        if s > .35 and v > .3:  # ignore greys, skies washed to white, and shadows
+            buckets[int(h * 24) % 24] += s * v
+    if not any(buckets):
+        return "#35f2a7"  # monochrome art falls back to the site accent
+    hue = (buckets.index(max(buckets)) + .5) / 24
+    r, g, b = colorsys.hls_to_rgb(hue, .64, .78)
+    return "#%02x%02x%02x" % (round(r * 255), round(g * 255), round(b * 255))
+
+
 def main():
     projects = json.loads((ROOT / "tools" / "projects.src.json").read_text(encoding="utf-8"))
     for p in projects:
@@ -58,7 +75,8 @@ def main():
             webp(src, SITE / f"{base}-sm.webp", 900, 75)
             local.append(base)
         p["imgs"] = local
-        print("ok", p["slug"], len(local), file=sys.stderr)
+        p["tint"] = tint(SITE / f"{local[0]}-sm.webp")
+        print("ok", p["slug"], len(local), p["tint"], file=sys.stderr)
     for name, url in EXTRA.items():
         src = fetch(url, name)
         if name.startswith("logo"):

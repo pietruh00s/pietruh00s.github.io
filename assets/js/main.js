@@ -9,7 +9,7 @@ const esc = (s = "") => s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", 
 function initShader() {
   const canvas = $(".hero__gl");
   const gl = canvas.getContext("webgl", { antialias: false, alpha: false, powerPreference: "low-power" });
-  if (!gl) { canvas.style.background = "radial-gradient(circle at 70% 30%, #10382a, #0a0b0d 60%)"; return; }
+  if (!gl) { canvas.style.background = "radial-gradient(circle at 70% 30%, #10382a, #090c0b 60%)"; return; }
 
   const vs = `attribute vec2 p; void main(){ gl_Position = vec4(p, 0., 1.); }`;
   const fs = `
@@ -27,7 +27,7 @@ function initShader() {
       vec2 w = vec2(fbm(p*1.4 + 2.*q + vec2(1.7, 9.2) + tt*1.3), fbm(p*1.4 + 2.*q + vec2(8.3, 2.8) - tt));
       float f = fbm(p*1.2 + 2.4*w + .35*mm);
       float d = length(p - mm);
-      vec3 base = vec3(.039, .043, .051);
+      vec3 base = vec3(.035, .047, .043);
       vec3 mint = vec3(.21, .95, .65);
       vec3 warm = vec3(1., .54, .24);
       vec3 col = base;
@@ -101,7 +101,7 @@ function renderLists() {
   const other = PROJECTS.filter(p => p.group === "other");
 
   $('[data-group="featured"]').innerHTML = featured.map((p, i) => `
-    <a class="card reveal" href="#p/${p.slug}" style="--d:${(i % 3) * .08}s">
+    <a class="card reveal" href="#p/${p.slug}" style="--d:${(i % 3) * .08}s;--tint:${p.tint}">
       <div class="card__media"><img src="${p.imgs[0]}-sm.webp" srcset="${p.imgs[0]}-sm.webp 900w, ${p.imgs[0]}.webp 1920w" sizes="(max-width: 640px) 100vw, 60vw" alt="" loading="${i < 2 ? "eager" : "lazy"}"></div>
       ${p.stat ? `<span class="card__badge mono">${esc(p.stat)}</span>` : ""}
       <span class="card__go" aria-hidden="true">${icon("arrow-right")}</span>
@@ -241,6 +241,7 @@ function openCase(slug) {
 
 function renderCase(i) {
   current = PROJECTS[i];
+  dialog.style.setProperty("--tint", current.tint);
   body.innerHTML = caseHTML(current);
   const prev = PROJECTS[(i - 1 + PROJECTS.length) % PROJECTS.length];
   const next = PROJECTS[(i + 1) % PROJECTS.length];
