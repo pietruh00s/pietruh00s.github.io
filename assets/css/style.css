@@ -20,6 +20,7 @@
   --display-stretch: 125%; /* Archivo Expanded for display type */
   --mono: "JetBrains Mono", ui-monospace, "Cascadia Code", Consolas, monospace;
   --ease: cubic-bezier(.2, .7, .2, 1);
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -227,7 +228,8 @@ body.locked { overflow: hidden; }
 /* ---------- case study dialog ---------- */
 .case { scrollbar-color: #2c313a var(--bg); width: 100%; max-width: none; height: 100%; max-height: none; margin: 0; padding: 0; border: 0; background: var(--bg); color: var(--text); overflow-y: auto; overscroll-behavior: contain; }
 .case::backdrop { background: #000c; }
-.case[open] { animation: caseIn .45s var(--ease); }
+.case[open] { animation: caseIn .45s var(--ease-out); }
+.case.vt[open] { animation: none; } /* the view transition carries the entrance */
 @keyframes caseIn { from { opacity: 0; transform: translateY(24px); } }
 .case__bar { position: sticky; top: 0; z-index: 3; display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px var(--gutter); background: #0a0b0dd9; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
 .case__close { padding: 9px 16px; }
@@ -299,8 +301,26 @@ body.locked { overflow: hidden; }
 .lightbox__next { right: 10px; top: 50%; translate: 0 -50%; }
 .lightbox__count { position: absolute; bottom: 16px; left: 0; right: 0; text-align: center; color: var(--muted); margin: 0; }
 
+
+/* ---------- focal moment: the hero renders in ----------
+   headline lines wipe in like render buckets; the portrait resolves from a soft low-res preview to sharp */
+@keyframes bucketIn { from { clip-path: inset(0 0 100% 0); transform: translateY(.22em); } to { clip-path: inset(-25% -5% -25% -5%); transform: none; } }
+@keyframes resolveIn { from { filter: blur(16px) saturate(.35) brightness(.55); transform: scale(1.05); } to { filter: none; transform: none; } }
+@keyframes fadeIn { from { opacity: 0; } }
+@keyframes riseIn { from { opacity: 0; transform: translateY(10px); } }
+.hero__line { animation: bucketIn .7s var(--ease-out) calc(120ms + var(--i, 0) * 90ms) both; }
+.hero__portrait img { animation: resolveIn .95s var(--ease-out) .15s both; }
+.hero__portrait figcaption { animation: riseIn .5s var(--ease-out) .85s both; }
+.hero__lead, .hero__actions, .hero__status { animation: fadeIn .6s var(--ease-out) .5s both; }
+.hero__facts { animation: fadeIn .6s var(--ease-out) .7s both; }
+
+/* ---------- card -> case study continuity (View Transitions) ---------- */
+::view-transition-group(case-media) { animation-duration: .5s; animation-timing-function: var(--ease-out); }
+::view-transition-old(case-media), ::view-transition-new(case-media) { height: 100%; object-fit: cover; overflow: clip; }
+::view-transition-old(root), ::view-transition-new(root) { animation-duration: .3s; }
+
 /* ---------- reveal ---------- */
-.reveal { opacity: 0; transform: translateY(28px); transition: opacity .8s var(--ease), transform .8s var(--ease); transition-delay: var(--d, 0s); }
+.reveal { opacity: 0; transform: translateY(16px); transition: opacity .55s var(--ease-out), transform .55s var(--ease-out); transition-delay: var(--d, 0s); }
 .reveal.in { opacity: 1; transform: none; }
 
 /* ---------- responsive ---------- */
@@ -355,8 +375,15 @@ body.locked { overflow: hidden; }
   .lightbox__nav { top: auto !important; bottom: 8px; translate: none !important; }
   .footer { flex-direction: column; }
 }
+/* reduced motion: drop spatial movement, blur and loops; keep opacity and colour changes that carry state */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
-  .reveal { opacity: 1; transform: none; }
+  .hero__line, .hero__portrait img, .hero__portrait figcaption { animation: fadeIn .4s ease-out both; }
+  .reveal { transform: none; transition: opacity .3s ease-out; }
+  .case[open] { animation: fadeIn .2s ease-out; }
+  .caret { animation: none; }
+  .card:hover, .card:focus-visible, .tile:hover, .tile:focus-visible { transform: none; }
+  .card:hover .card__media img, .card:focus-visible .card__media img, .tile:hover img, .tile:focus-visible img, .gallery button:hover img { transform: none; }
+  .card__go { transition: opacity .2s; }
+  .btn:active { transform: none; }
 }

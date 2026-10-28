@@ -178,7 +178,7 @@ function caseHTML(p) {
       </button>`).join("")}</div>` : "";
 
   return `
-    <div class="case__hero"><img src="${p.imgs[0]}.webp" alt="${esc(p.title)} key art"></div>
+    <div class="case__hero"><img src="${p.imgs[0]}.webp" alt="${esc(p.title)} key art" style="view-transition-name:case-media"></div>
     <div class="wrap">
       <header class="case__head">
         <h1 id="case-title">${esc(p.title)}</h1>
@@ -208,9 +208,38 @@ function caseHTML(p) {
     </div>`;
 }
 
+// shared-element continuity between a project's card image and the case-study hero
+const canMorph = "startViewTransition" in document && !reduceMotion;
+// cards start the morph themselves (not via hashchange) so the transition begins in the click's own task
+document.addEventListener("click", e => {
+  const a = e.target.closest("main a.card, main a.tile");
+  if (!a || !canMorph || e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+  const i = PROJECTS.findIndex(p => `#p/${p.slug}` === a.getAttribute("href"));
+  if (i < 0) return;
+  e.preventDefault();
+  morph(a.querySelector("img"), () => { history.pushState(null, "", `#p/${PROJECTS[i].slug}`); renderCase(i); });
+});
+const cardImg = slug => {
+  const img = document.querySelector(`main a[href="#p/${slug}"] img`);
+  const r = img?.getBoundingClientRect();
+  return r && r.bottom > 0 && r.top < innerHeight ? img : null; // only morph back to a card the visitor can see
+};
+
+function morph(fromImg, update) {
+  if (!canMorph || !fromImg) return update();
+  fromImg.style.viewTransitionName = "case-media";
+  dialog.classList.add("vt");
+  const vt = document.startViewTransition(() => { fromImg.style.viewTransitionName = ""; update(); });
+  vt.finished.finally(() => dialog.classList.remove("vt"));
+}
+
 function openCase(slug) {
   const i = PROJECTS.findIndex(p => p.slug === slug);
   if (i < 0) return closeCase(true);
+  renderCase(i);
+}
+
+function renderCase(i) {
   current = PROJECTS[i];
   body.innerHTML = caseHTML(current);
   const prev = PROJECTS[(i - 1 + PROJECTS.length) % PROJECTS.length];
@@ -218,16 +247,27 @@ function openCase(slug) {
   $(".case__prev").href = `#p/${prev.slug}`; $(".case__prev").title = prev.title;
   $(".case__next").href = `#p/${next.slug}`; $(".case__next").title = next.title;
   document.title = `${current.title} – Piotr Osika`;
-  if (!dialog.open) {
+  // a freshly opened dialog is already at the top (closing empties it); writing scrollTop
+  // during a view-transition update makes Chrome abort the transition
+  if (dialog.open) dialog.scrollTop = 0;
+  else {
     returnFocus = document.activeElement;
     dialog.showModal();
     document.body.classList.add("locked");
   }
-  dialog.scrollTop = 0;
   $(".case__close").focus({ preventScroll: true });
 }
 
 function closeCase(fromRoute) {
+  const back = current && canMorph && dialog.open ? cardImg(current.slug) : null;
+  if (!back) return finishClose(fromRoute);
+  // reverse morph: the case hero (named in its markup) shrinks back into its card
+  dialog.classList.add("vt");
+  const vt = document.startViewTransition(() => { finishClose(fromRoute); back.style.viewTransitionName = "case-media"; });
+  vt.finished.finally(() => { back.style.viewTransitionName = ""; dialog.classList.remove("vt"); });
+}
+
+function finishClose(fromRoute) {
   if (dialog.open) dialog.close();
   document.body.classList.remove("locked");
   document.title = "Piotr Osika – Technical Artist";
@@ -265,9 +305,14 @@ const lbImg = document.createElement("img"); // created here so the markup never
 lbImg.alt = "";
 $(".lightbox__next").before(lbImg);
 let lbIndex = 0;
-function showLb(i) {
+function showLb(i, dir = 0) {
   const imgs = current.imgs;
   lbIndex = (i + imgs.length) % imgs.length;
+  // the next image arrives from the side you paged towards
+  lbImg.animate(reduceMotion || !dir
+    ? [{ opacity: 0 }, { opacity: 1 }]
+    : [{ opacity: 0, transform: `translateX(${dir * 24}px)` }, { opacity: 1, transform: "none" }],
+    { duration: 220, easing: "cubic-bezier(.16, 1, .3, 1)" });
   lbImg.src = `${imgs[lbIndex]}.webp`;
   lbImg.alt = `${current.title} – image ${lbIndex + 1}`;
   $(".lightbox__count").textContent = `${lbIndex + 1} / ${imgs.length}`;
@@ -283,21 +328,21 @@ function closeLightbox() {
   body.querySelector(`[data-lb="${lbIndex}"]`)?.focus({ preventScroll: true });
 }
 $(".lightbox__close").addEventListener("click", closeLightbox);
-$(".lightbox__prev").addEventListener("click", () => showLb(lbIndex - 1));
-$(".lightbox__next").addEventListener("click", () => showLb(lbIndex + 1));
+$(".lightbox__prev").addEventListener("click", () => showLb(lbIndex - 1, -1));
+$(".lightbox__next").addEventListener("click", () => showLb(lbIndex + 1, 1));
 lightbox.addEventListener("click", e => { if (e.target === lightbox) closeLightbox(); });
 addEventListener("keydown", e => {
   if (lightbox.hidden) return;
   if (e.key === "Escape") { e.preventDefault(); closeLightbox(); }
-  if (e.key === "ArrowLeft") showLb(lbIndex - 1);
-  if (e.key === "ArrowRight") showLb(lbIndex + 1);
+  if (e.key === "ArrowLeft") showLb(lbIndex - 1, -1);
+  if (e.key === "ArrowRight") showLb(lbIndex + 1, 1);
 });
 let touchX = null;
 lightbox.addEventListener("touchstart", e => { touchX = e.touches[0].clientX; }, { passive: true });
 lightbox.addEventListener("touchend", e => {
   if (touchX === null) return;
   const dx = e.changedTouches[0].clientX - touchX;
-  if (Math.abs(dx) > 40) showLb(lbIndex + (dx < 0 ? 1 : -1));
+  if (Math.abs(dx) > 40) showLb(lbIndex + (dx < 0 ? 1 : -1), dx < 0 ? 1 : -1);
   touchX = null;
 });
 
