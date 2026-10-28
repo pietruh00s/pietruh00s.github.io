@@ -8,9 +8,9 @@ W, H = 1200, 630
 BG, TEXT, MUTED, ACCENT = (10, 11, 13), (238, 240, 242), (154, 161, 171), (53, 242, 167)
 
 
-def font(name, size, weight):
+def font(name, size, weight, width=None):
     f = ImageFont.truetype(str(CACHE / name), size)
-    f.set_variation_by_axes([weight])
+    f.set_variation_by_axes([weight] if width is None else [weight, width])  # Archivo axes: weight, width
     return f
 
 
@@ -39,12 +39,12 @@ def main():
     d = ImageDraw.Draw(img)
     x = 72
     d.text((x, 150), "TECHNICAL ARTIST @ TEN SQUARE GAMES", font=font("JetBrainsMono.ttf", 22, 500), fill=MUTED)
-    big = font("SpaceGrotesk.ttf", 112, 700)
+    big = font("Archivo.ttf", 104, 800, 125)
     d.text((x, 200), "PIOTR", font=big, fill=TEXT)
     w = d.textlength("PIOTR", font=big)
     d.text((x + w, 200), "/", font=big, fill=ACCENT)
     d.text((x, 310), "OSIKA", font=big, fill=TEXT)
-    d.text((x, 452), "Shaders · VFX · Tools · Unity", font=font("SpaceGrotesk.ttf", 36, 500), fill=(213, 217, 222))
+    d.text((x, 452), "Shaders · VFX · Tools · Unity", font=font("Archivo.ttf", 34, 500, 100), fill=(213, 217, 222))
     d.text((x, 540), "pietruh00s.github.io", font=font("JetBrainsMono.ttf", 22, 400), fill=ACCENT)
 
     img.save(ROOT / "assets" / "og.jpg", "JPEG", quality=88, optimize=True, progressive=True)

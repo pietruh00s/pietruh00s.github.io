@@ -2,3 +2,4 @@ tools/_cache/
 .claude/
 __pycache__/
 tools/_venv/
+font-preview/
