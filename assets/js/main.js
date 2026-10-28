@@ -2,6 +2,7 @@ const PROJECTS = window.PROJECTS || [];
 const PLATFORM = { ios: "iOS", android: "Android", switch: "Switch", xbox: "Xbox", playstation: "PlayStation", windows: "Windows", steam: "Steam" };
 const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
 const $ = (s, el = document) => el.querySelector(s);
+const icon = name => `<svg class="i" aria-hidden="true"><use href="#i-${name}"/></svg>`;
 const esc = (s = "") => s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
 /* ---------- hero shader ---------- */
@@ -103,11 +104,11 @@ function renderLists() {
     <a class="card reveal" href="#p/${p.slug}" style="--d:${(i % 3) * .08}s">
       <div class="card__media"><img src="${p.imgs[0]}-sm.webp" srcset="${p.imgs[0]}-sm.webp 900w, ${p.imgs[0]}.webp 1920w" sizes="(max-width: 640px) 100vw, 60vw" alt="" loading="${i < 2 ? "eager" : "lazy"}"></div>
       ${p.stat ? `<span class="card__badge mono">${esc(p.stat)}</span>` : ""}
-      <span class="card__go" aria-hidden="true">→</span>
+      <span class="card__go" aria-hidden="true">${icon("arrow-right")}</span>
       <div class="card__body">
-        <div class="card__meta mono"><span>${esc(metaLine(p))}</span></div>
         <h3 class="card__title">${esc(p.title)}</h3>
         <p class="card__role">${esc(p.role)}</p>
+        <p class="card__meta mono">${esc(metaLine(p))}</p>
         ${platsHTML(p)}
       </div>
     </a>`).join("");
@@ -134,7 +135,7 @@ function breakdownHTML(b) {
       <img class="compare__after" src="${b.after}" alt="${esc(b.afterLabel || "After")}">
       <span class="compare__label mono">${esc(b.beforeLabel || "Before")}</span>
       <span class="compare__label compare__label--after mono">${esc(b.afterLabel || "After")}</span>
-      <span class="compare__handle" aria-hidden="true"></span>
+      <span class="compare__handle" aria-hidden="true"><span>${icon("split")}</span></span>
       <input type="range" min="0" max="100" value="50" aria-label="Before / after comparison">
     </div>`;
   else if (b.type === "video") media = `
@@ -167,6 +168,7 @@ function caseHTML(p) {
     <div class="videos">${p.yt.map(id => `
       <button class="yt" type="button" data-yt="${id}" aria-label="Play video">
         <img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="" loading="lazy">
+        <span class="yt__play">${icon("play")}</span>
       </button>`).join("")}</div>` : "";
   const gallery = p.imgs.length > 1 ? `
     <h2>Gallery</h2>
@@ -179,7 +181,6 @@ function caseHTML(p) {
     <div class="case__hero"><img src="${p.imgs[0]}.webp" alt="${esc(p.title)} key art"></div>
     <div class="wrap">
       <header class="case__head">
-        <p class="mono idx">${esc(metaLine(p) || "Project")}</p>
         <h1 id="case-title">${esc(p.title)}</h1>
         <p class="case__role mono">${esc(p.role)}</p>
       </header>
@@ -193,7 +194,7 @@ function caseHTML(p) {
           ${p.period ? `<div><dt class="mono">When</dt><dd>${esc(p.period)}</dd></div>` : ""}
           <div><dt class="mono">Role</dt><dd>${esc(p.role)}</dd></div>
           ${p.platforms?.length ? `<div><dt class="mono">Platforms</dt><dd>${platsHTML(p)}</dd></div>` : ""}
-          ${p.website ? `<div><a class="btn btn--ghost" href="${p.website}" target="_blank" rel="noopener">Website ↗</a></div>` : ""}
+          ${p.website ? `<div><a class="btn btn--ghost" href="${p.website}" target="_blank" rel="noopener">Website ${icon("external")}</a></div>` : ""}
         </dl>
       </div>
       ${breakdowns}
@@ -260,7 +261,9 @@ body.addEventListener("click", e => {
 
 /* ---------- lightbox ---------- */
 const lightbox = $(".lightbox");
-const lbImg = $("img", lightbox);
+const lbImg = document.createElement("img"); // created here so the markup never ships an empty <img>
+lbImg.alt = "";
+$(".lightbox__next").before(lbImg);
 let lbIndex = 0;
 function showLb(i) {
   const imgs = current.imgs;
@@ -331,7 +334,7 @@ function initMobileMenu() {
 }
 
 document.querySelectorAll("[data-copy]").forEach(btn => btn.addEventListener("click", async () => {
-  try { await navigator.clipboard.writeText(btn.dataset.copy); btn.textContent = "Copied ✓"; }
+  try { await navigator.clipboard.writeText(btn.dataset.copy); btn.textContent = "Copied"; }
   catch { btn.textContent = "Select & copy"; }
   setTimeout(() => (btn.textContent = "Copy"), 1800);
 }));
