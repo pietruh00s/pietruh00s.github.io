@@ -5,7 +5,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 ROOT = Path(__file__).resolve().parent.parent
 CACHE = ROOT / "tools" / "_cache"
 W, H = 1200, 630
-BG, TEXT, MUTED, ACCENT = (10, 11, 13), (238, 240, 242), (154, 161, 171), (53, 242, 167)
+BG, TEXT, MUTED, ACCENT = (9, 12, 11), (238, 240, 242), (154, 161, 171), (53, 242, 167)
 
 
 def font(name, size, weight, width=None):
@@ -23,18 +23,14 @@ def main():
     glow = glow.filter(ImageFilter.GaussianBlur(160))
     img.paste(Image.new("RGB", (W, H), (20, 70, 52)), (0, 0), glow)
 
-    # portrait on the right, fading into the background on its left edge
-    pw = 470
-    photo = Image.open(CACHE / "me-hero.webp").convert("RGB")
-    scale = max(pw / photo.width, H / photo.height)
-    photo = photo.resize((round(photo.width * scale), round(photo.height * scale)), Image.LANCZOS)
-    left = (photo.width - pw) * 0.62
-    photo = photo.crop((round(left), 0, round(left) + pw, H))
-    ramp = 160  # px of fade on the photo's left edge
-    row = Image.new("L", (pw, 1))
-    row.putdata([min(255, round(255 * (x / ramp) ** 1.4)) for x in range(pw)])
-    fade = row.resize((pw, H))
-    img.paste(photo, (W - pw, 0), fade)
+    # the hero cut-out, standing on the bottom edge, with a mint glow behind it like the hero shader
+    halo = Image.new("L", (W, H), 0)
+    ImageDraw.Draw(halo).ellipse((760, 40, 1240, 700), fill=90)
+    img.paste(Image.new("RGB", (W, H), (30, 120, 88)), (0, 0), halo.filter(ImageFilter.GaussianBlur(90)))
+    cut = Image.open(ROOT / "assets" / "img" / "me-cutout.webp").convert("RGBA")
+    ch = H - 40
+    cut = cut.resize((round(cut.width * ch / cut.height), ch), Image.LANCZOS)
+    img.paste(cut, (W - cut.width - 30, H - ch), cut)
 
     d = ImageDraw.Draw(img)
     x = 72

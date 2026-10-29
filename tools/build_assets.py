@@ -9,7 +9,6 @@ CDN = "https://cdn.prod.website-files.com/64ee4c358275d03e323c73e8/"
 CDN_SITE = "https://cdn.prod.website-files.com/64e731a821086db3a060f0b5/"
 
 EXTRA = {
-    "me-hero": CDN_SITE + "65019b3b418687b05937a83c_IMG_1088_1200p_optimized.webp",
     "me-about": CDN_SITE + "675dbb96368a94efb462c95b_IMG_9741.avif",
     "logo-tsg": CDN_SITE + "675e1e4694482e98bc5142da_logo_tsg.avif",
     "logo-vivid": CDN_SITE + "675e1e4621bbb189b10e3ca5_logo_vivid.avif",

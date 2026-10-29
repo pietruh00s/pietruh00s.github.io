@@ -110,6 +110,7 @@ body.locked { overflow: hidden; }
   position: absolute; z-index: 2; bottom: 0; right: -2vw; /* bleeds off the edge so the title tucks under the hood, not the face */
   height: min(92svh, 1040px); width: auto; pointer-events: none;
   filter: drop-shadow(0 0 70px #35f2a733) drop-shadow(0 30px 40px #000a); /* rim light from the glass behind */
+  -webkit-mask-image: linear-gradient(180deg, #000 80%, transparent); mask-image: linear-gradient(180deg, #000 80%, transparent);
 }
 .hero__stats {
   position: absolute; z-index: 3; right: var(--gutter); bottom: 20px; margin: 0;
