@@ -107,7 +107,7 @@ function renderLists() {
   const other = PROJECTS.filter(p => p.group === "other");
 
   $('[data-group="featured"]').innerHTML = featured.map((p, i) => `
-    <a class="card reveal" href="#p/${p.slug}" style="--d:${(i % 3) * .08}s;--tint:${p.tint}">
+    <a class="card reveal${i ? "" : " card--feature"}" href="#p/${p.slug}" style="--d:${(i % 3) * .08}s;--tint:${p.tint}">
       <div class="card__media"><img src="${p.imgs[0]}-sm.webp" srcset="${p.imgs[0]}-sm.webp 900w, ${p.imgs[0]}.webp 1920w" sizes="(max-width: 640px) 100vw, 60vw" alt="" loading="${i < 2 ? "eager" : "lazy"}"></div>
       ${p.stat ? `<span class="card__badge mono">${esc(p.stat)}</span>` : ""}
       <span class="card__go" aria-hidden="true">${icon("arrow-right")}</span>
@@ -116,6 +116,7 @@ function renderLists() {
         <p class="card__role">${esc(p.role)}</p>
         <p class="card__meta mono">${esc(metaLine(p))}</p>
         ${platsHTML(p)}
+        ${i ? "" : `<span class="card__cta">Open case study ${icon("arrow-right")}</span>`}
       </div>
     </a>`).join("");
 
