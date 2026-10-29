@@ -1,6 +1,7 @@
 [
   {
     "slug": "trophy-hunter",
+    "splitV": [2, 3, 4, 5],
     "group": "featured",
     "title": "Trophy Hunter",
     "role": "Technical Artist",

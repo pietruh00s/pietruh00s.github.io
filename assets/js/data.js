@@ -54,7 +54,11 @@ window.PROJECTS = [
    "assets/img/trophy-hunter/04",
    "assets/img/trophy-hunter/05",
    "assets/img/trophy-hunter/06",
-   "assets/img/trophy-hunter/07"
+   "assets/img/trophy-hunter/07",
+   "assets/img/trophy-hunter/08",
+   "assets/img/trophy-hunter/09",
+   "assets/img/trophy-hunter/10",
+   "assets/img/trophy-hunter/11"
   ],
   "yt": [],
   "tint": "#eb915c"

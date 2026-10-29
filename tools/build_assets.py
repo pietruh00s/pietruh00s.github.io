@@ -47,6 +47,19 @@ def logo(src: Path, dst: Path, size: int = 160):
     canvas.save(dst, "WEBP", quality=90, method=6)
 
 
+def halves(src: Path) -> list:
+    from PIL import Image
+    im = Image.open(src)
+    h = im.height // 2
+    out = []
+    for n, box in enumerate([(0, 0, im.width, h), (0, h, im.width, im.height)]):
+        dst = src.with_name(f"{src.stem}-{'ab'[n]}.png")
+        if not dst.exists():
+            im.crop(box).save(dst)
+        out.append(dst)
+    return out
+
+
 def tint(img: Path) -> str:
     """Signature hue of a project's key art, normalised to one lightness/saturation so every tint reads on the dark UI."""
     import colorsys
@@ -70,10 +83,14 @@ def main():
         local = []
         for i, f in enumerate(p["imgs"], 1):
             src = fetch(CDN + f, f"{p['slug']}-{i:02d}")
-            base = f"assets/img/{p['slug']}/{i:02d}"
-            webp(src, SITE / f"{base}.webp", 1920)
-            webp(src, SITE / f"{base}-sm.webp", 900, 75)
-            local.append(base)
+            # "splitV": 1-based source images that are two screenshots stacked vertically -> two gallery images
+            parts = halves(src) if i in p.get("splitV", []) else [src]
+            for part in parts:
+                base = f"assets/img/{p['slug']}/{len(local) + 1:02d}"
+                webp(part, SITE / f"{base}.webp", 1920)
+                webp(part, SITE / f"{base}-sm.webp", 900, 75)
+                local.append(base)
+        p.pop("splitV", None)
         p["imgs"] = local
         p["tint"] = tint(SITE / f"{local[0]}-sm.webp")
         print("ok", p["slug"], len(local), p["tint"], file=sys.stderr)
