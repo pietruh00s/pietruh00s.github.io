@@ -21,6 +21,9 @@ function initShader() {
     float fbm(vec2 p){ float v = 0., a = .5; for(int i = 0; i < 5; i++){ v += a*n(p); p = p*2.03 + 1.7; a *= .5; } return v; }
     void main(){
       vec2 uv = gl_FragCoord.xy / r; vec2 p = (gl_FragCoord.xy - .5*r) / r.y;
+      // fluted glass: each vertical rib refracts the field behind it towards its own centre
+      float ribs = r.x / (r.y * .045); float rib = fract(uv.x * ribs);
+      p.x += (rib - .5) * .085;
       vec2 mm = (m - .5) * vec2(r.x/r.y, 1.);
       float tt = t * .06;
       vec2 q = vec2(fbm(p*1.6 + tt), fbm(p*1.6 - tt + 3.1));
@@ -38,6 +41,9 @@ function initShader() {
       float lines = smoothstep(.48, .5, abs(fract(f*9.) - .5)) * .05;
       col += lines * mint;
       col *= .55 + .45*smoothstep(0., .7, uv.x);
+      col += .16 * mint * exp(-2.2*length(p - vec2(.55, -.05)));  // glow behind the figure
+      col *= .82 + .3*smoothstep(0., .55, rib) * (1. - smoothstep(.55, 1., rib));  // rib shading
+      col += .035 * smoothstep(.9, 1., rib);  // bright rib edge
       gl_FragColor = vec4(col, 1.);
     }`;
   const sh = (type, src) => { const s = gl.createShader(type); gl.shaderSource(s, src); gl.compileShader(s); return s; };

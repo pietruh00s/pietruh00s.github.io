@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=20261029b">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261029c">
 </head>
 <body>
   <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
@@ -56,35 +56,31 @@
     <section class="hero" id="top" aria-labelledby="hero-title">
       <canvas class="hero__gl" aria-hidden="true"></canvas>
       <div class="hero__grain" aria-hidden="true"></div>
-      <div class="hero__inner wrap">
+      <div class="hero__stage wrap">
+        <p class="hero__hello">Hello, I'm Piotr</p>
+        <h1 id="hero-title" class="hero__title">
+          <span class="hero__line" style="--i:0">Technical</span>
+          <span class="hero__line hero__line--accent" style="--i:1">Artist<span class="caret" aria-hidden="true"></span></span>
+        </h1>
         <div class="hero__copy">
-          <h1 id="hero-title" class="hero__title">
-            <span class="hero__line" style="--i:0">Tech&nbsp;/ VFX&nbsp;/</span>
-            <span class="hero__line" style="--i:1">Enviro&nbsp;/ 3D&amp;UI</span>
-            <span class="hero__line hero__line--accent" style="--i:2">Artist<span class="caret" aria-hidden="true"></span></span>
-          </h1>
-          <p class="hero__lead">Hello! I'm Piotr. If there's anything graphics-related to do in Unity – I'm&nbsp;in!</p>
+          <p class="hero__lead"><span class="hero__roles mono">Tech / VFX / Enviro / 3D&amp;UI</span>If there's anything graphics-related to do in Unity – I'm&nbsp;in!</p>
           <div class="hero__actions">
             <a class="btn btn--primary" href="#work">Explore my work <svg class="i" aria-hidden="true"><use href="#i-arrow-down"/></svg></a>
             <a class="btn btn--ghost" href="assets/Piotr-Osika-Resume.pdf" download>Download CV <span class="mono btn__tag">PDF</span></a>
           </div>
           <p class="hero__status mono"><span class="dot" aria-hidden="true"></span>Technical Artist @ Ten Square Games</p>
         </div>
-        <figure class="hero__portrait">
-          <img src="assets/img/me-hero.webp" alt="Piotr Osika in a pink hoodie and sunglasses" width="900" height="1200" fetchpriority="high">
-          <figcaption class="mono">
-            <span>shader: hero_flow.frag</span>
-            <span class="stats" aria-hidden="true">-- fps</span>
-          </figcaption>
-        </figure>
       </div>
-      <dl class="hero__facts wrap">
-        <div><dt class="mono">In gamedev since</dt><dd>2014</dd></div>
-        <div><dt class="mono">Studios</dt><dd>5</dd></div>
-        <div><dt class="mono">Minigolf Adventure</dt><dd>400k+ <small>copies sold</small></dd></div>
-        <div><dt class="mono">Engine of choice</dt><dd>Unity <small>URP · HDRP · Unity&nbsp;6</small></dd></div>
-      </dl>
+      <img class="hero__cutout" src="assets/img/me-cutout.webp" alt="Piotr Osika in a pink hoodie and sunglasses" width="778" height="1123" fetchpriority="high">
+      <p class="hero__stats mono" aria-hidden="true"><span>shader: hero_glass.frag</span><span class="stats">-- fps</span></p>
     </section>
+
+    <dl class="hero__facts wrap">
+      <div><dt class="mono">In gamedev since</dt><dd>2014</dd></div>
+      <div><dt class="mono">Studios</dt><dd>5</dd></div>
+      <div><dt class="mono">Minigolf Adventure</dt><dd>400k+ <small>copies sold</small></dd></div>
+      <div><dt class="mono">Engine of choice</dt><dd>Unity <small>URP · HDRP · Unity&nbsp;6</small></dd></div>
+    </dl>
 
     <section class="section" id="work" aria-labelledby="work-title">
       <div class="wrap">
@@ -250,7 +246,7 @@
     <p class="lightbox__count mono"></p>
   </div>
 
-  <script src="assets/js/data.js?v=20261029b"></script>
-  <script src="assets/js/main.js?v=20261029b" type="module"></script>
+  <script src="assets/js/data.js?v=20261029c"></script>
+  <script src="assets/js/main.js?v=20261029c" type="module"></script>
 </body>
 </html>
