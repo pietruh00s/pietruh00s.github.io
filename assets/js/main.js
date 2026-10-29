@@ -397,6 +397,10 @@ renderLists();
 initReveal();
 initNavSpy();
 initMobileMenu();
-initShader();
+// shader compile and first frames wait for the first paint (idle time alone comes *before* it), then for idle
+const startShader = () => "requestIdleCallback" in window ? requestIdleCallback(initShader, { timeout: 1500 }) : setTimeout(initShader, 200);
+try {
+  new PerformanceObserver((list, obs) => { obs.disconnect(); startShader(); }).observe({ type: "paint", buffered: true });
+} catch { addEventListener("load", startShader, { once: true }); } // no Paint Timing support
 addEventListener("hashchange", route);
 route();
