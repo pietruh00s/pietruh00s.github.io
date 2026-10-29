@@ -95,7 +95,6 @@ body.locked { overflow: hidden; }
 /* stage: hello line + huge title sit behind the cut-out; copy and stats sit in front of it */
 .hero__stage { position: relative; }
 .hero__hello { position: relative; z-index: 1; margin: 0 0 .35em; font-size: clamp(18px, 2vw, 28px); font-weight: 500; color: #d5d9de; }
-.hero__status { display: inline-flex; align-items: center; gap: 10px; color: var(--muted); margin: 28px 0 0; }
 .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px #35f2a724; }
 .hero__title { position: relative; z-index: 1; margin: 0; font-weight: 800; font-size: clamp(52px, 8.8vw, 168px); line-height: .86; letter-spacing: -.03em; text-transform: uppercase; }
 .hero__line { display: block; }
@@ -321,7 +320,7 @@ body.locked { overflow: hidden; }
 .hero__line { animation: bucketIn .7s var(--ease-out) calc(120ms + var(--i, 0) * 90ms) both; }
 .hero__cutout { animation: resolveIn .95s var(--ease-out) .15s both; }
 .hero__stats { animation: riseIn .5s var(--ease-out) .85s both; }
-.hero__hello, .hero__lead, .hero__actions, .hero__status { animation: fadeIn .6s var(--ease-out) .5s both; }
+.hero__hello, .hero__lead, .hero__actions { animation: fadeIn .6s var(--ease-out) .5s both; }
 .hero__facts { animation: fadeIn .6s var(--ease-out) .7s both; }
 
 /* ---------- card -> case study continuity (View Transitions) ---------- */

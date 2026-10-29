@@ -51,7 +51,7 @@ What a neighbouring portfolio cannot claim: commercial real-time graphics work s
 ## Brand Commitments
 
 - Name and wordmark: "PIOTR/OSIKA".
-- Headline identity carried over from the original site: "Tech / VFX / Enviro / 3D&UI Artist" and the line "Hello! I'm Piotr. If there's anything graphics-related to do in Unity – I'm in!".
+- Headline identity carried over from the original site: hero title "Technical Artist" with the roles line "Tech / VFX / Enviro / 3D / UI" and "If there's anything graphics-related to do in Unity – I'm in!".
 - Voice: first person, casual and upbeat, plain English ("I've got your back when it comes to all graphic things in your project").
 
 ## Evidence on Hand
