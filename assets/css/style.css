@@ -158,7 +158,7 @@ body.locked { overflow: hidden; }
 .card__badge { position: absolute; top: 16px; left: 16px; padding: 6px 10px; border-radius: 999px; background: var(--warm); color: #1a0a00; font-weight: 600; }
 /* --tint is each project's signature hue, sampled from its key art at build time */
 .card:hover, .card:focus-visible { border-color: color-mix(in srgb, var(--tint, #fff) 55%, transparent); transform: translateY(-3px); box-shadow: 0 26px 50px -26px color-mix(in srgb, var(--tint, transparent) 50%, transparent); }
-.card:hover .card__title, .card:focus-visible .card__title { color: var(--accent); }
+.card:hover .card__title, .card:focus-visible .card__title { color: var(--tint, var(--accent)); }
 .card:hover .card__media img, .card:focus-visible .card__media img { transform: scale(1.06); }
 .card:hover .card__go, .card:focus-visible .card__go { transform: none; opacity: 1; }
 
